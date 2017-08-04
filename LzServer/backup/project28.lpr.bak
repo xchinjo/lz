@@ -80,7 +80,7 @@ begin
       //     '','','');
 
 
- aProps := TSQLDBZEOSConnectionProperties.Create('zdbc:firebird-2.5://127.0.0.1:3050//fbdb/sam.fdb?LibLocation=/usr/lib64/libfbclient.so;username=sysdba;password=masterkey','/fbdb/sam.fdb','SYSDBA','masterkey');
+ aProps := TSQLDBZEOSConnectionProperties.Create('zdbc:firebird-2.5://127.0.0.1:3050//fbdb/ErpDB.FDB?LibLocation=/usr/lib64/libfbclient.so;username=sysdba;password=masterkey','/fbdb/ErpDB.FDB','SYSDBA','masterkey');
 
 
 
