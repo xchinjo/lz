@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="16">
+      <Unit0>
+        <Filename Value="project28.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="28"/>
+        <CursorPos X="37" Y="58"/>
+        <UsageCount Value="53"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="RESTData.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="20" Y="62"/>
+        <UsageCount Value="51"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="MobileClass.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="96"/>
+        <CursorPos X="38" Y="64"/>
+        <UsageCount Value="50"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="RESTModel.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="9"/>
+        <CursorPos X="46" Y="33"/>
+        <UsageCount Value="35"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="C:\mORMot\SQLite3\mORMot.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1185"/>
+        <CursorPos X="26" Y="1197"/>
+        <UsageCount Value="8"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\mORMot.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1185"/>
+        <CursorPos X="8" Y="1205"/>
+        <UsageCount Value="9"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\..\mORMotHttpServer.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="262"/>
+        <CursorPos X="82" Y="186"/>
+        <UsageCount Value="14"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\26 - RESTful ORM\RESTData.pas"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="19"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\26 - RESTful ORM\RESTServerClass.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="9"/>
+        <CursorPos X="3" Y="59"/>
+        <UsageCount Value="8"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\mORMotSQLite3.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="228"/>
+        <CursorPos X="8" Y="254"/>
+        <UsageCount Value="22"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\..\mORMotDB.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="533"/>
+        <CursorPos X="4" Y="595"/>
+        <UsageCount Value="14"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="C:\SynDBZeos.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="92"/>
+        <CursorPos X="5" Y="118"/>
+        <UsageCount Value="8"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="C:\SynSQLite3.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="5698"/>
+        <CursorPos X="184" Y="5726"/>
+        <UsageCount Value="22"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="C:\SynDBODBC.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1877"/>
+        <CursorPos X="71" Y="1895"/>
+        <UsageCount Value="13"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="C:\SynCrtSock.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="6058"/>
+        <CursorPos X="65" Y="6098"/>
+        <UsageCount Value="10"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="C:\LIB\DELPHI_LIB\mORMot_LastestLz\SQLite3\mORMot.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="51419"/>
+        <CursorPos X="14" Y="51343"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit15>
+    </Units>
+    <JumpHistory Count="24" HistoryIndex="23">
+      <Position1>
+        <Filename Value="project28.lpr"/>
+        <Caret Line="59" Column="63" TopLine="40"/>
+      </Position1>
+      <Position2>
+        <Filename Value="project28.lpr"/>
+        <Caret Line="75" Column="69" TopLine="56"/>
+      </Position2>
+      <Position3>
+        <Filename Value="project28.lpr"/>
+        <Caret Line="73" Column="18" TopLine="56"/>
+      </Position3>
+      <Position4>
+        <Filename Value="project28.lpr"/>
+        <Caret Line="86" Column="67" TopLine="56"/>
+      </Position4>
+      <Position5>
+        <Filename Value="RESTModel.pas"/>
+        <Caret Line="47" Column="39" TopLine="5"/>
+      </Position5>
+      <Position6>
+        <Filename Value="project28.lpr"/>
+        <Caret Line="86" Column="89" TopLine="59"/>
+      </Position6>
+      <Position7>
+        <Filename Value="project28.lpr"/>
+        <Caret Line="76" TopLine="52"/>
+      </Position7>
+      <Position8>
+        <Filename Value="project28.lpr"/>
+        <Caret Line="79" TopLine="52"/>
+      </Position8>
+      <Position9>
+        <Filename Value="project28.lpr"/>
+        <Caret Line="76" TopLine="52"/>
+      </Position9>
+      <Position10>
+        <Filename Value="project28.lpr"/>
+        <Caret Line="77" Column="87" TopLine="52"/>
+      </Position10>
+      <Position11>
+        <Filename Value="project28.lpr"/>
+        <Caret Line="165" Column="38" TopLine="143"/>
+      </Position11>
+      <Position12>
+        <Filename Value="MobileClass.pas"/>
+        <Caret Line="30" Column="6" TopLine="7"/>
+      </Position12>
+      <Position13>
+        <Filename Value="project28.lpr"/>
+        <Caret Line="38" Column="24" TopLine="10"/>
+      </Position13>
+      <Position14>
+        <Filename Value="project28.lpr"/>
+        <Caret Line="15" Column="13"/>
+      </Position14>
+      <Position15>
+        <Filename Value="project28.lpr"/>
+        <Caret Line="35" Column="20" TopLine="16"/>
+      </Position15>
+      <Position16>
+        <Filename Value="project28.lpr"/>
+        <Caret Line="40" Column="26" TopLine="25"/>
+      </Position16>
+      <Position17>
+        <Filename Value="project28.lpr"/>
+        <Caret Line="85" TopLine="42"/>
+      </Position17>
+      <Position18>
+        <Filename Value="project28.lpr"/>
+        <Caret Line="34" Column="54" TopLine="15"/>
+      </Position18>
+      <Position19>
+        <Filename Value="project28.lpr"/>
+        <Caret Line="49" Column="34" TopLine="26"/>
+      </Position19>
+      <Position20>
+        <Filename Value="project28.lpr"/>
+        <Caret Line="60" Column="36" TopLine="36"/>
+      </Position20>
+      <Position21>
+        <Filename Value="project28.lpr"/>
+        <Caret Line="46" Column="68" TopLine="33"/>
+      </Position21>
+      <Position22>
+        <Filename Value="project28.lpr"/>
+        <Caret Line="44" Column="55" TopLine="28"/>
+      </Position22>
+      <Position23>
+        <Filename Value="project28.lpr"/>
+        <Caret Line="50" TopLine="28"/>
+      </Position23>
+      <Position24>
+        <Filename Value="project28.lpr"/>
+        <Caret Line="221" Column="57" TopLine="200"/>
+      </Position24>
+    </JumpHistory>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints Count="1">
+      <Item1>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="MobileClass.pas"/>
+        <Line Value="147"/>
+      </Item1>
+    </BreakPoints>
+  </Debugging>
+</CONFIG>

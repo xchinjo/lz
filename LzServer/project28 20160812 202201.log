@@ -1,0 +1,948 @@
+C:\LIB\DELPHI_LIB\mORMot_LastestLz\SQLite3\Samples\28 - Simple RESTful ORM Server\project28.exe 0.0.0.0 (2016-08-12 20:21:31)Host=DESKTOP-LRSF58E User=xchinjo CPU=4*9-6-10759:FFFBEBBFFFE3BA1F0000000000 OS=15.0=6.2.9200 Wow64=0 Freq=2628200Environment variables=ALLUSERSPROFILE=C:\ProgramData	APPDATA=C:\Users\xchinjo\AppData\Roaming	asl.log=Destination=file	CommonProgramFiles=C:\Program Files\Common Files	CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files	CommonProgramW6432=C:\Program Files\Common Files	COMPUTERNAME=DESKTOP-LRSF58E	ComSpec=C:\Windows\system32\cmd.exe	ESET_OPTIONS=                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               	HOMEDRIVE=C:	HOMEPATH=\Users\xchinjo	JAVA_HOME=C:\Program Files\Java\jdk1.8.0_66	LOCALAPPDATA=C:\Users\xchinjo\AppData\Local	LOGONSERVER=\\DESKTOP-LRSF58E	NUMBER_OF_PROCESSORS=4	OS=Windows_NT	Path=C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Embarcadero\Studio\17.0\bin;C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl;C:\Program Files (x86)\Embarcadero\Studio\17.0\bin64;C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\Win64;C:\Program Files (x86)\Embarcadero\Studio\15.0\bin;C:\Users\Public\Documents\Embarcadero\Studio\15.0\Bpl;C:\Program Files (x86)\Embarcadero\Studio\15.0\bin64;C:\Users\Public\Documents\Embarcadero\Studio\15.0\Bpl\Win64;C:\Program Files (x86)\Embarcadero\RAD Studio\12.0\bin;C:\Users\Public\Documents\RAD Studio\12.0\Bpl;C:\Program Files (x86)\Embarcadero\RAD Studio\12.0\bin64;C:\Users\Public\Documents\RAD Studio\12.0\Bpl\Win64;C:\Program Files (x86)\Embarcadero\RAD Studio\9.0\bin;C:\Users\Public\Documents\RAD Studio\9.0\Bpl;C:\Program Files (x86)\Embarcadero\RAD Studio\9.0\bin64;C:\Users\Public\Documents\RAD Studio\9.0\Bpl\Win64;C:\Program Files (x86)\Borland\Delphi7\Bin;C:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\OpenVPN\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\nodejs\;C:\Program Files\MongoDB\Server\3.2\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Common Files\Tom Sawyer Software\8.0.0;C:\LIB\JAVA_LIB\apache-maven-3.3.9\bin;C:\Users\xchinjo\AppData\Local\atom\bin;C:\Users\xchinjo\AppData\Roaming\npm	PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC	PROCESSOR_ARCHITECTURE=AMD64	PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel	PROCESSOR_LEVEL=6	PROCESSOR_REVISION=2a07	ProgramData=C:\ProgramData	ProgramFiles=C:\Program Files	ProgramFiles(x86)=C:\Program Files (x86)	ProgramW6432=C:\Program Files	PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\PowerShell\Modules\	PUBLIC=C:\Users\Public	SystemDrive=C:	SystemRoot=C:\Windows	TEMP=C:\Users\xchinjo\AppData\Local\Temp	TMP=C:\Users\xchinjo\AppData\Local\Temp	TVT=C:\Program Files (x86)\Lenovo	USERDOMAIN=DESKTOP-LRSF58E	USERDOMAIN_ROAMINGPROFILE=DESKTOP-LRSF58E	USERNAME=xchinjo	USERPROFILE=C:\Users\xchinjo	VBOX_MSI_INSTALL_PATH=C:\Program Files\Oracle\VirtualBox\	windir=C:\Windows	__COMPAT_LAYER=RunAsAdmin InstallerTSQLLog 1.18.2833 FTS3 2016-08-12T13:22:0120160812 13220142  !  +    SynDBODBC.TODBCConnection(01652160).0000000100099024 
+20160812 13220142  !  -    00.000.005
+20160812 13220142  !  +    0000000100098953 
+20160812 13220145  ! debug 	Connected to MySQL using myodbc3.dll 5.5.5-10.1.14-MariaDB recognized as MySQL
+20160812 13220145  !  -    00.035.785
+20160812 13220145  !  +    SynSQLite3.TSQLDatabase(01652220).DBOpen 
+20160812 13220145  ! DB    	SynSQLite3.TSQLDatabase(01652220) ":memory:" database file opened with PageSize=1024 and CacheSize=2000
+20160812 13220145  !  -    00.000.340
+20160812 13220145  ! SQL   SynSQLite3.TSQLDatabase(01652220) 29us  returned 0 rows SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%';
+20160812 13220145  ! DB    mORMotSQLite3.TSQLRestServerDB(016009F0) CreateMissingTables on {"TSQLDatabase(01652220)":{"FileName":":memory:","IsMemory":true,"UseCache":true,"TransactionActive":false,"BusyTimeout":0,"CacheSize":2000,"PageSize":1024,"PageCount":0,"FileSize":0,"WALMode":false,"Synchronous":"smFull","LockingMode":"lmNormal","MemoryMappedMB":0,"user_version":0,"OpenV2Flags":6,"BackupBackgroundInProcess":false,"BackupBackgroundLastTime":"","BackupBackgroundLastFileName":"","SQLite3Library":{"TSQLite3LibraryDynamic(015FBD90)":{"LibraryName":"sqlite3-64.dll","Version":"3.11.1 with internal MM"}}}}
+20160812 13220145  ! DB    mORMotSQLite3.TSQLRestServerDB(016009F0) "GetTables":[]
+20160812 13220145  ! SQL   SynSQLite3.TSQLDatabase(01652220) 4us  BEGIN TRANSACTION;
+20160812 13220145  !  +    mORMotDB.TSQLRestStorageExternal(060600C0).Create TSQLINVM_PROD
+20160812 13220145  !  -    00.000.001
+20160812 13220145  ! info  mORMotDB.TSQLRestStorageExternal(060600C0) TSQLINVM_PROD {"TODBCConnectionProperties(0165A0B0)":{"Engine":"ODBC","ServerName":"","DatabaseNameSafe":"Driver=MySQL ODBC 3.51 Driver;Database=SAM;Server=124.109.2.164;Port=3307;USER=insysc;Password=insysc1234567890*","UserID":"","DBMS":"dMySQL","DBMSEngineName":"MySQL","BatchSendingAbilities":["cCreate"],"BatchMaxSentAtOnce":4096,"LoggedSQLMaxSize":0,"LogSQLStatementOnException":false,"ForcedSchemaName":"","UseCache":true,"RollbackOnDisconnect":true,"StoreVoidStringAsNull":false,"VariantStringAsWideString":false}} Server={"TSQLRestServerDB(016009F0)":{"DB":{"TSQLDatabase(01652220)":{"FileName":":memory:","IsMemory":true,"UseCache":true,"TransactionActive":true,"BusyTimeout":0,"CacheSize":2000,"PageSize":1024,"PageCount":2,"FileSize":2048,"WALMode":false,"Synchronous":"smFull","LockingMode":"lmNormal","MemoryMappedMB":0,"user_version":0,"OpenV2Flags":6,"BackupBackgroundInProcess":false,"BackupBackgroundLastTime":"","BackupBackgroundLastFileName":"","SQLite3Library":{"TSQLite3LibraryDynamic(015FBD90)":{"LibraryName":"sqlite3-64.dll","Version":"3.11.1 with internal MM"}}}},"StatementLastException":"","NoAJAXJSON":false,"Options":[],"HandleAuthentication":false,"BypassORMAuthentication":[],"Stats":{"StartDate":"2016-08-12 13:22:01","Success":0,"ServiceMethod":0,"ServiceInterface":0,"OutcomingFiles":0,"CurrentThreadCount":0,"Created":0,"Read":0,"Updated":0,"Deleted":0,"ClientsCurrent":0,"ClientsMax":0,"CurrentRequestCount":0,"Input":{"Bytes":0,"Text":"0 B"},"Output":{"Bytes":0,"Text":"0 B"},"InputThroughput":{"BytesPerSec":0,"Text":"0 B/s"},"OutputThroughput":{"BytesPerSec":0,"Text":"0 B/s"},"Processing":false,"TaskCount":0,"TotalTime":{"MicroSec":0,"Text":"0us"},"LastTime":{"MicroSec":0,"Text":"0us"},"MinimalTime":{"MicroSec":0,"Text":"0us"},"AverageTime":{"MicroSec":0,"Text":"0us"},"MaximalTime":{"MicroSec":0,"Text":"0us"},"PerSec":0,"Errors":0,"LastError":null},"StatLevels":["mlTables","mlMethods","mlInterfaces","mlSQLite3"],"StaticVirtualTableDirect":true,"ServerTimeStamp":135322326401}}
+20160812 13220145  !  +    SynDBODBC.TODBCStatement(015DAA80).000000010009BACD 
+20160812 13220145  !  -    00.000.055
+20160812 13220145  !  +    SynDBODBC.TODBCStatement(015DAA80).000000010009B019 
+20160812 13220145  ! SQL   	SynDBODBC.TODBCStatement(015DAA80) select COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, NUMERIC_PRECISION, NUMERIC_SCALE, 0 INDEX_COUNT from INFORMATION_SCHEMA.COLUMNS where UPPER(TABLE_SCHEMA) = 'DRIVER=MYSQL ODBC 3.51 DRIVER;DATABASE=SAM;SERVER=124.109.2.164;PORT=3307;USER=INSYSC;PASSWORD=INSYSC1234567890*' and UPPER(TABLE_NAME) = 'INVM_PROD'
+20160812 13220145  !  -    00.009.516
+20160812 13220146  ! debug mORMotDB.TSQLRestStorageExternal(060600C0) "GetFields":[{"ColumnName":"ID","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":true},{"ColumnName":"PRDRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"PRDCDE","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDBAR","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDNAT","ColumnTypeNative":"varchar","ColumnLength":200,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDNAE","ColumnTypeNative":"varchar","ColumnLength":200,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDNSE","ColumnTypeNative":"varchar","ColumnLength":200,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"MANRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"PRDREG","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"PTYRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"UNIRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"PRDCOA","ColumnTypeNative":"decimal","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":4,"ColumnType":4,"ColumnIndexed":false},{"ColumnName":"PRDCOU","ColumnTypeNative":"decimal","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":4,"ColumnType":4,"ColumnIndexed":false},{"ColumnName":"ROURUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"VENRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"ROUCDE","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PSTRUN","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPCDE","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPBRN","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPDEP","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPSEC","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"ENTUSR","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"ENTDTE","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"ENTTIM","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"ENTWKS","ColumnTypeNative":"varchar","ColumnLength":100,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"MODUSR","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"MODDTE","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"MODTIM","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"MODWKS","ColumnTypeNative":"varchar","ColumnLength":100,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECACT","ColumnTypeNative":"varchar","ColumnLength":10,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECSTS","ColumnTypeNative":"varchar","ColumnLength":10,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECSEQ","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"RECFL1","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL2","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL3","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL4","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL5","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"ENTUID","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"MODUID","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false}]
+20160812 13220146  ! SQL   SynSQLite3.TSQLDatabase(01652220) 26.21ms  CREATE VIRTUAL TABLE INVM_PROD USING External(PRDRUN INTEGER, PRDCDE TEXT COLLATE SYSTEMNOCASE, PRDBAR TEXT COLLATE SYSTEMNOCASE, PRDNAT TEXT COLLATE SYSTEMNOCASE, PRDNAE TEXT COLLATE SYSTEMNOCASE, PRDNSE TEXT COLLATE SYSTEMNOCASE, MANRUN INTEGER, PRDREG TEXT COLLATE ISO8601, PTYRUN INTEGER, UNIRUN INTEGER, PRDCOA FLOAT, PRDCOU FLOAT, ROURUN INTEGER, VENRUN INTEGER, ROUCDE TEXT COLLATE SYSTEMNOCASE, PSTRUN TEXT COLLATE SYSTEMNOCASE, CMPCDE TEXT COLLATE SYSTEMNOCASE, CMPBRN TEXT COLLATE SYSTEMNOCASE, CMPDEP TEXT COLLATE SYSTEMNOCASE, CMPSEC TEXT COLLATE SYSTEMNOCASE, ENTUSR TEXT COLLATE SYSTEMNOCASE, ENTDTE TEXT COLLATE ISO8601, ENTTIM TEXT COLLATE ISO8601, ENTWKS TEXT COLLATE SYSTEMNOCASE, MODUSR TEXT COLLATE SYSTEMNOCASE, MODDTE TEXT COLLATE ISO8601, MODTIM TEXT COLLATE ISO8601, MODWKS TEXT COLLATE SYSTEMNOCASE, RECACT TEXT COLLATE SYSTEMNOCASE, RECSTS TEXT COLLATE SYSTEMNOCASE, RECSEQ INTEGER, RECFL1 TEXT COLLATE SYSTEMNOCASE, RECFL2 TEXT COLLATE SYSTEMNOCASE, RECFL3 TEXT COLLATE SYSTEMNOCASE, RECFL4 TEXT COLLATE SYSTEMNOCASE, RECFL5 TEXT COLLATE SYSTEMNOCASE, ENTUID INTEGER, MODUID INTEGER);
+20160812 13220146  !  +    SynDBODBC.TODBCStatement(015DA940).000000010009BACD 
+20160812 13220146  !  -    00.000.016
+20160812 13220146  !  +    SynDBODBC.TODBCStatement(015DA940).000000010009B019 
+20160812 13220146  ! SQL   	SynDBODBC.TODBCStatement(015DA940) select ID from INVM_PROD limit 1
+20160812 13220146  !  -    00.003.358
+20160812 13220146  ! SQL   SynSQLite3.TSQLDatabase(01652220) 12us  COMMIT TRANSACTION;
+20160812 13220146  !  +    mORMotHttpServer.TSQLHttpServer(01662BC0).Create useHttpApiRegisteringURI (secNone) on port 8880
+20160812 13220146  !  -    00.000.001
+20160812 13220146  ! http  mORMotHttpServer.TSQLHttpServer(01662BC0) http.sys registration of http://+:8880/root
+20160812 13220146  " info  SetThreadName 00001CD0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220146  " trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001CD0 ThreadCount=1
+20160812 13220146  # info  SetThreadName 00001B74=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220146  # trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001B74 ThreadCount=2
+20160812 13220146  $ info  SetThreadName 00002908=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220146  $ trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002908 ThreadCount=3
+20160812 13220146  % info  SetThreadName 00002304=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220146  % trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002304 ThreadCount=4
+20160812 13220146  & info  SetThreadName 0000201C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220146  & trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000201C ThreadCount=5
+20160812 13220146  ' info  SetThreadName 00002100=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220146  ' trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002100 ThreadCount=6
+20160812 13220146  ! http  mORMotHttpServer.TSQLHttpServer(01662BC0) {"THttpApiServer(0164A630)":{"Cloned":false,"RegisteredUrl":"http://+:8880/root/","HTTPQueueLength":1000,"MaxBandwidth":-1,"MaxConnections":-1,"APIVersion":"HTTP API 2.0","ServerName":"Synopse mORMot (Windows)","ProcessName":"root "}} initialized for root
+20160812 13220146  ( info  SetThreadName 000022D0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220146  ( trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000022D0 ThreadCount=7
+20160812 13220147  ) info  SetThreadName 0000208C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  ) trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000208C ThreadCount=8
+20160812 13220147  * info  SetThreadName 00001B58=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  * trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001B58 ThreadCount=9
+20160812 13220147  + info  SetThreadName 000022D8=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  + trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000022D8 ThreadCount=10
+20160812 13220147  , info  SetThreadName 00000790=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  , trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000790 ThreadCount=11
+20160812 13220147  - info  SetThreadName 00002424=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  - trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002424 ThreadCount=12
+20160812 13220147  . info  SetThreadName 00001138=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  . trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001138 ThreadCount=13
+20160812 13220147  / info  SetThreadName 0000069C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  / trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000069C ThreadCount=14
+20160812 13220147  0 info  SetThreadName 000008E4=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  0 trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000008E4 ThreadCount=15
+20160812 13220147  1 info  SetThreadName 00002BDC=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  1 trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002BDC ThreadCount=16
+20160812 13220147  2 info  SetThreadName 00002A84=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  2 trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002A84 ThreadCount=17
+20160812 13220147  3 info  SetThreadName 00002AC0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  4 info  SetThreadName 00001628=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  3 trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002AC0 ThreadCount=18
+20160812 13220147  4 trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001628 ThreadCount=19
+20160812 13220147  5 info  SetThreadName 00001468=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  5 trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001468 ThreadCount=20
+20160812 13220147  6 info  SetThreadName 00002874=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  6 trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002874 ThreadCount=21
+20160812 13220147  7 info  SetThreadName 00000160=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  7 trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000160 ThreadCount=22
+20160812 13220147  8 info  SetThreadName 00002BC0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  8 trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002BC0 ThreadCount=23
+20160812 13220147  9 info  SetThreadName 00000D3C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  9 trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000D3C ThreadCount=24
+20160812 13220147  : info  SetThreadName 00000950=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  : trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000950 ThreadCount=25
+20160812 13220147  ; info  SetThreadName 0000287C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  ; trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000287C ThreadCount=26
+20160812 13220147  < info  SetThreadName 000023AC=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  < trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000023AC ThreadCount=27
+20160812 13220147  = info  SetThreadName 000014D4=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  = trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000014D4 ThreadCount=28
+20160812 13220147  > info  SetThreadName 000025BC=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  > trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000025BC ThreadCount=29
+20160812 13220147  ? info  SetThreadName 00002904=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  ? trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002904 ThreadCount=30
+20160812 13220147  @ info  SetThreadName 00002A6C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  @ trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002A6C ThreadCount=31
+20160812 13220147  A info  SetThreadName 00002230=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220147  A trace mORMotSQLite3.TSQLRestServerDB(016009F0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002230 ThreadCount=32
+20160812 13220441  !  +    mORMotHttpServer.TSQLHttpServer(01662BC0).000000010011B925 
+20160812 13220441  !  -    00.000.001
+20160812 13220441  ! http  mORMotHttpServer.TSQLHttpServer(01662BC0) {"THttpApiServer(0164A630)":{"Cloned":false,"RegisteredUrl":"http://+:8880/root/","HTTPQueueLength":1000,"MaxBandwidth":-1,"MaxConnections":-1,"APIVersion":"HTTP API 2.0","ServerName":"Synopse mORMot (Windows)","ProcessName":"root "}} finalized for 1 server(s)
+20160812 13220441  ) trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=0000208C ThreadCount=31
+20160812 13220441  ; trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=0000287C ThreadCount=18
+20160812 13220441  < trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=000023AC ThreadCount=17
+20160812 13220441  A trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=00002230 ThreadCount=16
+20160812 13220441  + trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=000022D8 ThreadCount=29
+20160812 13220441  # trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=00001B74 ThreadCount=15
+20160812 13220441  , trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=00000790 ThreadCount=28
+20160812 13220441  * trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=00001B58 ThreadCount=30
+20160812 13220441  : trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=00000950 ThreadCount=19
+20160812 13220441  7 trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=00000160 ThreadCount=20
+20160812 13220441  6 trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=00002874 ThreadCount=21
+20160812 13220441  2 trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=00002A84 ThreadCount=22
+20160812 13220441  1 trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=00002BDC ThreadCount=23
+20160812 13220441  0 trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=000008E4 ThreadCount=24
+20160812 13220441  / trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=0000069C ThreadCount=25
+20160812 13220441  . trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=00001138 ThreadCount=26
+20160812 13220441  - trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=00002424 ThreadCount=27
+20160812 13220441  " trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=00001CD0 ThreadCount=14
+20160812 13220441  $ trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=00002908 ThreadCount=13
+20160812 13220441  ' trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=00002100 ThreadCount=12
+20160812 13220441  & trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=0000201C ThreadCount=11
+20160812 13220441  ( trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=000022D0 ThreadCount=10
+20160812 13220441  % trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=00002304 ThreadCount=9
+20160812 13220441  4 trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=00001628 ThreadCount=8
+20160812 13220441  3 trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=00002AC0 ThreadCount=7
+20160812 13220441  5 trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=00001468 ThreadCount=6
+20160812 13220441  8 trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=00002BC0 ThreadCount=5
+20160812 13220441  = trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=000014D4 ThreadCount=4
+20160812 13220441  9 trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=00000D3C ThreadCount=3
+20160812 13220441  > trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=000025BC ThreadCount=2
+20160812 13220441  ? trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=00002904 ThreadCount=1
+20160812 13220441  @ trace mORMotSQLite3.TSQLRestServerDB(016009F0) EndCurrentThread(THttpApiServer) ThreadID=00002A6C ThreadCount=0
+20160812 13220441  !  +    mORMotSQLite3.TSQLRestServerDB(016009F0).00000001000A8762 
+20160812 13220441  !  +    	mORMotSQLite3.TSQLRestServerDB(016009F0).Shutdown CurrentRequestCount=0 File=
+20160812 13220441  !  -    	00.005.089
+20160812 13220441  !  +    	SynSQLite3.TSQLDatabase(01652220).Destroy 
+20160812 13220441  !  +    		00000001000B15E2 
+20160812 13220441  ! DB    			SynSQLite3.TSQLDatabase(01652220) closing ":memory:"
+20160812 13220441  !  -    		00.000.089
+20160812 13220441  !  -    	00.000.098
+20160812 13220441  !  -    00.005.313
+20160812 13220441  !  +    SynDBODBC.TODBCConnection(01652160).0000000100099206 
+20160812 13220441  !  -    00.000.000
+20160812 13220441  !  +    SynDBODBC.TODBCConnection(01652160).0000000100099024 
+20160812 13220441  !  -    00.000.001
+20160812 13220441  !  +    0000000100098953 
+20160812 13220442  ! debug 	Connected to MySQL using myodbc3.dll 5.5.5-10.1.14-MariaDB recognized as MySQL
+20160812 13220442  !  -    00.020.219
+20160812 13220442  !  +    SynSQLite3.TSQLDatabase(01652220).DBOpen 
+20160812 13220442  ! DB    	SynSQLite3.TSQLDatabase(01652220) ":memory:" database file opened with PageSize=1024 and CacheSize=2000
+20160812 13220442  !  -    00.000.163
+20160812 13220442  ! SQL   SynSQLite3.TSQLDatabase(01652220) 27us  returned 0 rows SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%';
+20160812 13220442  ! DB    mORMotSQLite3.TSQLRestServerDB(01615ED0) CreateMissingTables on {"TSQLDatabase(01652220)":{"FileName":":memory:","IsMemory":true,"UseCache":true,"TransactionActive":false,"BusyTimeout":0,"CacheSize":2000,"PageSize":1024,"PageCount":0,"FileSize":0,"WALMode":false,"Synchronous":"smFull","LockingMode":"lmNormal","MemoryMappedMB":0,"user_version":0,"OpenV2Flags":6,"BackupBackgroundInProcess":false,"BackupBackgroundLastTime":"","BackupBackgroundLastFileName":"","SQLite3Library":{"TSQLite3LibraryDynamic(015FBD90)":{"LibraryName":"sqlite3-64.dll","Version":"3.11.1 with internal MM"}}}}
+20160812 13220442  ! DB    mORMotSQLite3.TSQLRestServerDB(01615ED0) "GetTables":[]
+20160812 13220442  ! SQL   SynSQLite3.TSQLDatabase(01652220) 4us  BEGIN TRANSACTION;
+20160812 13220442  !  +    mORMotDB.TSQLRestStorageExternal(01687AC0).Create TSQLINVM_PROD
+20160812 13220442  !  -    00.000.001
+20160812 13220442  ! info  mORMotDB.TSQLRestStorageExternal(01687AC0) TSQLINVM_PROD {"TODBCConnectionProperties(0165A0B0)":{"Engine":"ODBC","ServerName":"","DatabaseNameSafe":"Driver=MySQL ODBC 3.51 Driver;Database=SAM;Server=124.109.2.164;Port=3307;USER=insysc;Password=insysc1234567890*","UserID":"","DBMS":"dMySQL","DBMSEngineName":"MySQL","BatchSendingAbilities":["cCreate"],"BatchMaxSentAtOnce":4096,"LoggedSQLMaxSize":0,"LogSQLStatementOnException":false,"ForcedSchemaName":"","UseCache":true,"RollbackOnDisconnect":true,"StoreVoidStringAsNull":false,"VariantStringAsWideString":false}} Server={"TSQLRestServerDB(01615ED0)":{"DB":{"TSQLDatabase(01652220)":{"FileName":":memory:","IsMemory":true,"UseCache":true,"TransactionActive":true,"BusyTimeout":0,"CacheSize":2000,"PageSize":1024,"PageCount":2,"FileSize":2048,"WALMode":false,"Synchronous":"smFull","LockingMode":"lmNormal","MemoryMappedMB":0,"user_version":0,"OpenV2Flags":6,"BackupBackgroundInProcess":false,"BackupBackgroundLastTime":"","BackupBackgroundLastFileName":"","SQLite3Library":{"TSQLite3LibraryDynamic(015FBD90)":{"LibraryName":"sqlite3-64.dll","Version":"3.11.1 with internal MM"}}}},"StatementLastException":"","NoAJAXJSON":false,"Options":[],"HandleAuthentication":false,"BypassORMAuthentication":[],"Stats":{"StartDate":"2016-08-12 13:22:04","Success":0,"ServiceMethod":0,"ServiceInterface":0,"OutcomingFiles":0,"CurrentThreadCount":0,"Created":0,"Read":0,"Updated":0,"Deleted":0,"ClientsCurrent":0,"ClientsMax":0,"CurrentRequestCount":0,"Input":{"Bytes":0,"Text":"0 B"},"Output":{"Bytes":0,"Text":"0 B"},"InputThroughput":{"BytesPerSec":0,"Text":"0 B/s"},"OutputThroughput":{"BytesPerSec":0,"Text":"0 B/s"},"Processing":false,"TaskCount":0,"TotalTime":{"MicroSec":0,"Text":"0us"},"LastTime":{"MicroSec":0,"Text":"0us"},"MinimalTime":{"MicroSec":0,"Text":"0us"},"AverageTime":{"MicroSec":0,"Text":"0us"},"MaximalTime":{"MicroSec":0,"Text":"0us"},"PerSec":0,"Errors":0,"LastError":null},"StatLevels":["mlTables","mlMethods","mlInterfaces","mlSQLite3"],"StaticVirtualTableDirect":true,"ServerTimeStamp":135322326404}}
+20160812 13220442  !  +    SynDBODBC.TODBCStatement(015DAA80).000000010009BACD 
+20160812 13220442  !  -    00.000.030
+20160812 13220442  !  +    SynDBODBC.TODBCStatement(015DAA80).000000010009B019 
+20160812 13220442  ! SQL   	SynDBODBC.TODBCStatement(015DAA80) select COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, NUMERIC_PRECISION, NUMERIC_SCALE, 0 INDEX_COUNT from INFORMATION_SCHEMA.COLUMNS where UPPER(TABLE_SCHEMA) = 'DRIVER=MYSQL ODBC 3.51 DRIVER;DATABASE=SAM;SERVER=124.109.2.164;PORT=3307;USER=INSYSC;PASSWORD=INSYSC1234567890*' and UPPER(TABLE_NAME) = 'INVM_PROD'
+20160812 13220443  !  -    00.008.473
+20160812 13220444  ! debug mORMotDB.TSQLRestStorageExternal(01687AC0) "GetFields":[{"ColumnName":"ID","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":true},{"ColumnName":"PRDRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"PRDCDE","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDBAR","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDNAT","ColumnTypeNative":"varchar","ColumnLength":200,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDNAE","ColumnTypeNative":"varchar","ColumnLength":200,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDNSE","ColumnTypeNative":"varchar","ColumnLength":200,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"MANRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"PRDREG","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"PTYRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"UNIRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"PRDCOA","ColumnTypeNative":"decimal","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":4,"ColumnType":4,"ColumnIndexed":false},{"ColumnName":"PRDCOU","ColumnTypeNative":"decimal","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":4,"ColumnType":4,"ColumnIndexed":false},{"ColumnName":"ROURUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"VENRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"ROUCDE","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PSTRUN","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPCDE","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPBRN","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPDEP","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPSEC","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"ENTUSR","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"ENTDTE","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"ENTTIM","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"ENTWKS","ColumnTypeNative":"varchar","ColumnLength":100,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"MODUSR","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"MODDTE","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"MODTIM","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"MODWKS","ColumnTypeNative":"varchar","ColumnLength":100,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECACT","ColumnTypeNative":"varchar","ColumnLength":10,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECSTS","ColumnTypeNative":"varchar","ColumnLength":10,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECSEQ","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"RECFL1","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL2","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL3","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL4","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL5","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"ENTUID","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"MODUID","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false}]
+20160812 13220444  ! SQL   SynSQLite3.TSQLDatabase(01652220) 22.18ms  CREATE VIRTUAL TABLE INVM_PROD USING External(PRDRUN INTEGER, PRDCDE TEXT COLLATE SYSTEMNOCASE, PRDBAR TEXT COLLATE SYSTEMNOCASE, PRDNAT TEXT COLLATE SYSTEMNOCASE, PRDNAE TEXT COLLATE SYSTEMNOCASE, PRDNSE TEXT COLLATE SYSTEMNOCASE, MANRUN INTEGER, PRDREG TEXT COLLATE ISO8601, PTYRUN INTEGER, UNIRUN INTEGER, PRDCOA FLOAT, PRDCOU FLOAT, ROURUN INTEGER, VENRUN INTEGER, ROUCDE TEXT COLLATE SYSTEMNOCASE, PSTRUN TEXT COLLATE SYSTEMNOCASE, CMPCDE TEXT COLLATE SYSTEMNOCASE, CMPBRN TEXT COLLATE SYSTEMNOCASE, CMPDEP TEXT COLLATE SYSTEMNOCASE, CMPSEC TEXT COLLATE SYSTEMNOCASE, ENTUSR TEXT COLLATE SYSTEMNOCASE, ENTDTE TEXT COLLATE ISO8601, ENTTIM TEXT COLLATE ISO8601, ENTWKS TEXT COLLATE SYSTEMNOCASE, MODUSR TEXT COLLATE SYSTEMNOCASE, MODDTE TEXT COLLATE ISO8601, MODTIM TEXT COLLATE ISO8601, MODWKS TEXT COLLATE SYSTEMNOCASE, RECACT TEXT COLLATE SYSTEMNOCASE, RECSTS TEXT COLLATE SYSTEMNOCASE, RECSEQ INTEGER, RECFL1 TEXT COLLATE SYSTEMNOCASE, RECFL2 TEXT COLLATE SYSTEMNOCASE, RECFL3 TEXT COLLATE SYSTEMNOCASE, RECFL4 TEXT COLLATE SYSTEMNOCASE, RECFL5 TEXT COLLATE SYSTEMNOCASE, ENTUID INTEGER, MODUID INTEGER);
+20160812 13220444  !  +    SynDBODBC.TODBCStatement(015DA580).000000010009BACD 
+20160812 13220444  !  -    00.000.013
+20160812 13220444  !  +    SynDBODBC.TODBCStatement(015DA580).000000010009B019 
+20160812 13220444  ! SQL   	SynDBODBC.TODBCStatement(015DA580) select ID from INVM_PROD limit 1
+20160812 13220444  !  -    00.003.602
+20160812 13220444  ! SQL   SynSQLite3.TSQLDatabase(01652220) 13us  COMMIT TRANSACTION;
+20160812 13220444  !  +    mORMotHttpServer.TSQLHttpServer(01662BC0).Create useHttpApiRegisteringURI (secNone) on port 8880
+20160812 13220444  !  -    00.000.001
+20160812 13220444  ! http  mORMotHttpServer.TSQLHttpServer(01662BC0) http.sys registration of http://+:8880/root
+20160812 13220444  @ info  SetThreadName 00002508=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  @ trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002508 ThreadCount=1
+20160812 13220444  ? info  SetThreadName 000006E8=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  ? trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000006E8 ThreadCount=2
+20160812 13220444  > info  SetThreadName 00001C04=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  > trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001C04 ThreadCount=3
+20160812 13220444  9 info  SetThreadName 00001BE0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  9 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001BE0 ThreadCount=4
+20160812 13220444  = info  SetThreadName 000027F8=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  = trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000027F8 ThreadCount=5
+20160812 13220444  8 info  SetThreadName 00002388=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  8 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002388 ThreadCount=6
+20160812 13220444  ! http  mORMotHttpServer.TSQLHttpServer(01662BC0) {"THttpApiServer(0164A630)":{"Cloned":false,"RegisteredUrl":"http://+:8880/root/","HTTPQueueLength":1000,"MaxBandwidth":-1,"MaxConnections":-1,"APIVersion":"HTTP API 2.0","ServerName":"Synopse mORMot (Windows)","ProcessName":"root "}} initialized for root
+20160812 13220444  5 info  SetThreadName 0000009C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  5 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000009C ThreadCount=7
+20160812 13220444  3 info  SetThreadName 00001380=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  3 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001380 ThreadCount=8
+20160812 13220444  4 info  SetThreadName 00000B6C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  4 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000B6C ThreadCount=9
+20160812 13220444  % info  SetThreadName 0000230C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  % trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000230C ThreadCount=10
+20160812 13220444  ( info  SetThreadName 00001464=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  ( trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001464 ThreadCount=11
+20160812 13220444  & info  SetThreadName 00001E10=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  & trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001E10 ThreadCount=12
+20160812 13220444  ' info  SetThreadName 000020EC=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  ' trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000020EC ThreadCount=13
+20160812 13220444  $ info  SetThreadName 00001820=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  $ trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001820 ThreadCount=14
+20160812 13220444  " info  SetThreadName 00002B60=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  " trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002B60 ThreadCount=15
+20160812 13220444  # info  SetThreadName 0000055C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  # trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000055C ThreadCount=16
+20160812 13220444  - info  SetThreadName 000025E0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  - trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000025E0 ThreadCount=17
+20160812 13220444  . info  SetThreadName 00000F40=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  . trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000F40 ThreadCount=18
+20160812 13220444  / info  SetThreadName 000029B0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  / trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000029B0 ThreadCount=19
+20160812 13220444  0 info  SetThreadName 00001DA0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  0 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001DA0 ThreadCount=20
+20160812 13220444  1 info  SetThreadName 000029F0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  1 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000029F0 ThreadCount=21
+20160812 13220444  2 info  SetThreadName 00002860=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  2 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002860 ThreadCount=22
+20160812 13220444  6 info  SetThreadName 00002A1C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  6 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002A1C ThreadCount=23
+20160812 13220444  7 info  SetThreadName 00001BD0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  7 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001BD0 ThreadCount=24
+20160812 13220444  : info  SetThreadName 000028A4=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  : trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000028A4 ThreadCount=25
+20160812 13220444  + info  SetThreadName 00002604=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  + trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002604 ThreadCount=26
+20160812 13220444  * info  SetThreadName 000024EC=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  * trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000024EC ThreadCount=27
+20160812 13220444  , info  SetThreadName 00000620=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  , trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000620 ThreadCount=28
+20160812 13220444  A info  SetThreadName 0000299C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  A trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000299C ThreadCount=29
+20160812 13220444  < info  SetThreadName 00001A54=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  < trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001A54 ThreadCount=30
+20160812 13220444  ) info  SetThreadName 000028BC=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  ) trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000028BC ThreadCount=31
+20160812 13220444  ; info  SetThreadName 00001218=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220444  ; trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001218 ThreadCount=32
+20160812 13220560  !  +    mORMotHttpServer.TSQLHttpServer(01662BC0).000000010011B925 
+20160812 13220560  !  -    00.000.001
+20160812 13220560  ! http  mORMotHttpServer.TSQLHttpServer(01662BC0) {"THttpApiServer(0164A630)":{"Cloned":false,"RegisteredUrl":"http://+:8880/root/","HTTPQueueLength":1000,"MaxBandwidth":-1,"MaxConnections":-1,"APIVersion":"HTTP API 2.0","ServerName":"Synopse mORMot (Windows)","ProcessName":"root "}} finalized for 1 server(s)
+20160812 13220560  5 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=0000009C ThreadCount=31
+20160812 13220560  3 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001380 ThreadCount=30
+20160812 13220560  4 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00000B6C ThreadCount=29
+20160812 13220560  % trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=0000230C ThreadCount=28
+20160812 13220560  ( trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001464 ThreadCount=27
+20160812 13220560  & trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001E10 ThreadCount=26
+20160812 13220560  ' trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000020EC ThreadCount=25
+20160812 13220560  $ trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001820 ThreadCount=24
+20160812 13220560  " trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002B60 ThreadCount=23
+20160812 13220560  - trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000025E0 ThreadCount=22
+20160812 13220560  # trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=0000055C ThreadCount=21
+20160812 13220560  . trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00000F40 ThreadCount=20
+20160812 13220560  / trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000029B0 ThreadCount=19
+20160812 13220560  0 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001DA0 ThreadCount=18
+20160812 13220560  1 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000029F0 ThreadCount=17
+20160812 13220560  2 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002860 ThreadCount=16
+20160812 13220560  6 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002A1C ThreadCount=15
+20160812 13220560  7 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001BD0 ThreadCount=14
+20160812 13220560  : trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000028A4 ThreadCount=13
+20160812 13220560  + trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002604 ThreadCount=12
+20160812 13220560  * trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000024EC ThreadCount=11
+20160812 13220560  , trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00000620 ThreadCount=10
+20160812 13220560  A trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=0000299C ThreadCount=9
+20160812 13220560  < trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001A54 ThreadCount=8
+20160812 13220560  ) trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000028BC ThreadCount=7
+20160812 13220560  ; trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001218 ThreadCount=6
+20160812 13220560  ? trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000006E8 ThreadCount=5
+20160812 13220560  @ trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002508 ThreadCount=4
+20160812 13220560  > trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001C04 ThreadCount=3
+20160812 13220560  9 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001BE0 ThreadCount=2
+20160812 13220560  = trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000027F8 ThreadCount=1
+20160812 13220560  8 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002388 ThreadCount=0
+20160812 13220560  !  +    mORMotSQLite3.TSQLRestServerDB(01615ED0).00000001000A8762 
+20160812 13220560  !  +    	mORMotSQLite3.TSQLRestServerDB(01615ED0).Shutdown CurrentRequestCount=0 File=
+20160812 13220560  !  -    	00.005.929
+20160812 13220560  !  +    	SynSQLite3.TSQLDatabase(01652220).Destroy 
+20160812 13220560  !  +    		00000001000B15E2 
+20160812 13220560  ! DB    			SynSQLite3.TSQLDatabase(01652220) closing ":memory:"
+20160812 13220560  !  -    		00.000.080
+20160812 13220560  !  -    	00.000.093
+20160812 13220560  !  -    00.006.063
+20160812 13220560  !  +    SynDBODBC.TODBCConnection(01652160).0000000100099206 
+20160812 13220560  !  -    00.000.000
+20160812 13220560  !  +    SynDBODBC.TODBCConnection(01652160).0000000100099024 
+20160812 13220560  !  -    00.000.001
+20160812 13220560  !  +    0000000100098953 
+20160812 13220562  ! debug 	Connected to MySQL using myodbc3.dll 5.5.5-10.1.14-MariaDB recognized as MySQL
+20160812 13220562  !  -    00.022.568
+20160812 13220562  !  +    SynSQLite3.TSQLDatabase(01652220).DBOpen 
+20160812 13220562  ! DB    	SynSQLite3.TSQLDatabase(01652220) ":memory:" database file opened with PageSize=1024 and CacheSize=2000
+20160812 13220562  !  -    00.000.164
+20160812 13220562  ! SQL   SynSQLite3.TSQLDatabase(01652220) 27us  returned 0 rows SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%';
+20160812 13220562  ! DB    mORMotSQLite3.TSQLRestServerDB(01615ED0) CreateMissingTables on {"TSQLDatabase(01652220)":{"FileName":":memory:","IsMemory":true,"UseCache":true,"TransactionActive":false,"BusyTimeout":0,"CacheSize":2000,"PageSize":1024,"PageCount":0,"FileSize":0,"WALMode":false,"Synchronous":"smFull","LockingMode":"lmNormal","MemoryMappedMB":0,"user_version":0,"OpenV2Flags":6,"BackupBackgroundInProcess":false,"BackupBackgroundLastTime":"","BackupBackgroundLastFileName":"","SQLite3Library":{"TSQLite3LibraryDynamic(015FBD90)":{"LibraryName":"sqlite3-64.dll","Version":"3.11.1 with internal MM"}}}}
+20160812 13220562  ! DB    mORMotSQLite3.TSQLRestServerDB(01615ED0) "GetTables":[]
+20160812 13220562  ! SQL   SynSQLite3.TSQLDatabase(01652220) 3us  BEGIN TRANSACTION;
+20160812 13220562  !  +    mORMotDB.TSQLRestStorageExternal(072D1050).Create TSQLINVM_PROD
+20160812 13220562  !  -    00.000.001
+20160812 13220562  ! info  mORMotDB.TSQLRestStorageExternal(072D1050) TSQLINVM_PROD {"TODBCConnectionProperties(0165A0B0)":{"Engine":"ODBC","ServerName":"","DatabaseNameSafe":"Driver=MySQL ODBC 3.51 Driver;Database=SAM;Server=124.109.2.164;Port=3307;USER=insysc;Password=insysc1234567890*","UserID":"","DBMS":"dMySQL","DBMSEngineName":"MySQL","BatchSendingAbilities":["cCreate"],"BatchMaxSentAtOnce":4096,"LoggedSQLMaxSize":0,"LogSQLStatementOnException":false,"ForcedSchemaName":"","UseCache":true,"RollbackOnDisconnect":true,"StoreVoidStringAsNull":false,"VariantStringAsWideString":false}} Server={"TSQLRestServerDB(01615ED0)":{"DB":{"TSQLDatabase(01652220)":{"FileName":":memory:","IsMemory":true,"UseCache":true,"TransactionActive":true,"BusyTimeout":0,"CacheSize":2000,"PageSize":1024,"PageCount":2,"FileSize":2048,"WALMode":false,"Synchronous":"smFull","LockingMode":"lmNormal","MemoryMappedMB":0,"user_version":0,"OpenV2Flags":6,"BackupBackgroundInProcess":false,"BackupBackgroundLastTime":"","BackupBackgroundLastFileName":"","SQLite3Library":{"TSQLite3LibraryDynamic(015FBD90)":{"LibraryName":"sqlite3-64.dll","Version":"3.11.1 with internal MM"}}}},"StatementLastException":"","NoAJAXJSON":false,"Options":[],"HandleAuthentication":false,"BypassORMAuthentication":[],"Stats":{"StartDate":"2016-08-12 13:22:05","Success":0,"ServiceMethod":0,"ServiceInterface":0,"OutcomingFiles":0,"CurrentThreadCount":0,"Created":0,"Read":0,"Updated":0,"Deleted":0,"ClientsCurrent":0,"ClientsMax":0,"CurrentRequestCount":0,"Input":{"Bytes":0,"Text":"0 B"},"Output":{"Bytes":0,"Text":"0 B"},"InputThroughput":{"BytesPerSec":0,"Text":"0 B/s"},"OutputThroughput":{"BytesPerSec":0,"Text":"0 B/s"},"Processing":false,"TaskCount":0,"TotalTime":{"MicroSec":0,"Text":"0us"},"LastTime":{"MicroSec":0,"Text":"0us"},"MinimalTime":{"MicroSec":0,"Text":"0us"},"AverageTime":{"MicroSec":0,"Text":"0us"},"MaximalTime":{"MicroSec":0,"Text":"0us"},"PerSec":0,"Errors":0,"LastError":null},"StatLevels":["mlTables","mlMethods","mlInterfaces","mlSQLite3"],"StaticVirtualTableDirect":true,"ServerTimeStamp":135322326405}}
+20160812 13220562  !  +    SynDBODBC.TODBCStatement(015DAA80).000000010009BACD 
+20160812 13220562  !  -    00.000.037
+20160812 13220562  !  +    SynDBODBC.TODBCStatement(015DAA80).000000010009B019 
+20160812 13220562  ! SQL   	SynDBODBC.TODBCStatement(015DAA80) select COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, NUMERIC_PRECISION, NUMERIC_SCALE, 0 INDEX_COUNT from INFORMATION_SCHEMA.COLUMNS where UPPER(TABLE_SCHEMA) = 'DRIVER=MYSQL ODBC 3.51 DRIVER;DATABASE=SAM;SERVER=124.109.2.164;PORT=3307;USER=INSYSC;PASSWORD=INSYSC1234567890*' and UPPER(TABLE_NAME) = 'INVM_PROD'
+20160812 13220562  !  -    00.010.887
+20160812 13220601  ! debug mORMotDB.TSQLRestStorageExternal(072D1050) "GetFields":[{"ColumnName":"ID","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":true},{"ColumnName":"PRDRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"PRDCDE","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDBAR","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDNAT","ColumnTypeNative":"varchar","ColumnLength":200,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDNAE","ColumnTypeNative":"varchar","ColumnLength":200,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDNSE","ColumnTypeNative":"varchar","ColumnLength":200,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"MANRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"PRDREG","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"PTYRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"UNIRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"PRDCOA","ColumnTypeNative":"decimal","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":4,"ColumnType":4,"ColumnIndexed":false},{"ColumnName":"PRDCOU","ColumnTypeNative":"decimal","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":4,"ColumnType":4,"ColumnIndexed":false},{"ColumnName":"ROURUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"VENRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"ROUCDE","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PSTRUN","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPCDE","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPBRN","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPDEP","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPSEC","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"ENTUSR","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"ENTDTE","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"ENTTIM","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"ENTWKS","ColumnTypeNative":"varchar","ColumnLength":100,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"MODUSR","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"MODDTE","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"MODTIM","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"MODWKS","ColumnTypeNative":"varchar","ColumnLength":100,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECACT","ColumnTypeNative":"varchar","ColumnLength":10,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECSTS","ColumnTypeNative":"varchar","ColumnLength":10,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECSEQ","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"RECFL1","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL2","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL3","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL4","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL5","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"ENTUID","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"MODUID","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false}]
+20160812 13220601  ! SQL   SynSQLite3.TSQLDatabase(01652220) 26.43ms  CREATE VIRTUAL TABLE INVM_PROD USING External(PRDRUN INTEGER, PRDCDE TEXT COLLATE SYSTEMNOCASE, PRDBAR TEXT COLLATE SYSTEMNOCASE, PRDNAT TEXT COLLATE SYSTEMNOCASE, PRDNAE TEXT COLLATE SYSTEMNOCASE, PRDNSE TEXT COLLATE SYSTEMNOCASE, MANRUN INTEGER, PRDREG TEXT COLLATE ISO8601, PTYRUN INTEGER, UNIRUN INTEGER, PRDCOA FLOAT, PRDCOU FLOAT, ROURUN INTEGER, VENRUN INTEGER, ROUCDE TEXT COLLATE SYSTEMNOCASE, PSTRUN TEXT COLLATE SYSTEMNOCASE, CMPCDE TEXT COLLATE SYSTEMNOCASE, CMPBRN TEXT COLLATE SYSTEMNOCASE, CMPDEP TEXT COLLATE SYSTEMNOCASE, CMPSEC TEXT COLLATE SYSTEMNOCASE, ENTUSR TEXT COLLATE SYSTEMNOCASE, ENTDTE TEXT COLLATE ISO8601, ENTTIM TEXT COLLATE ISO8601, ENTWKS TEXT COLLATE SYSTEMNOCASE, MODUSR TEXT COLLATE SYSTEMNOCASE, MODDTE TEXT COLLATE ISO8601, MODTIM TEXT COLLATE ISO8601, MODWKS TEXT COLLATE SYSTEMNOCASE, RECACT TEXT COLLATE SYSTEMNOCASE, RECSTS TEXT COLLATE SYSTEMNOCASE, RECSEQ INTEGER, RECFL1 TEXT COLLATE SYSTEMNOCASE, RECFL2 TEXT COLLATE SYSTEMNOCASE, RECFL3 TEXT COLLATE SYSTEMNOCASE, RECFL4 TEXT COLLATE SYSTEMNOCASE, RECFL5 TEXT COLLATE SYSTEMNOCASE, ENTUID INTEGER, MODUID INTEGER);
+20160812 13220601  !  +    SynDBODBC.TODBCStatement(015DA940).000000010009BACD 
+20160812 13220601  !  -    00.000.014
+20160812 13220601  !  +    SynDBODBC.TODBCStatement(015DA940).000000010009B019 
+20160812 13220601  ! SQL   	SynDBODBC.TODBCStatement(015DA940) select ID from INVM_PROD limit 1
+20160812 13220601  !  -    00.004.594
+20160812 13220601  ! SQL   SynSQLite3.TSQLDatabase(01652220) 29us  COMMIT TRANSACTION;
+20160812 13220601  !  +    mORMotHttpServer.TSQLHttpServer(01662BC0).Create useHttpApiRegisteringURI (secNone) on port 8880
+20160812 13220601  !  -    00.000.003
+20160812 13220601  ! http  mORMotHttpServer.TSQLHttpServer(01662BC0) http.sys registration of http://+:8880/root
+20160812 13220601  8 info  SetThreadName 00002080=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  8 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002080 ThreadCount=1
+20160812 13220601  = info  SetThreadName 000029A4=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  = trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000029A4 ThreadCount=2
+20160812 13220601  9 info  SetThreadName 0000123C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  9 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000123C ThreadCount=3
+20160812 13220601  > info  SetThreadName 00001600=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  > trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001600 ThreadCount=4
+20160812 13220601  @ info  SetThreadName 00002AC8=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  @ trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002AC8 ThreadCount=5
+20160812 13220601  ? info  SetThreadName 00001444=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  ? trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001444 ThreadCount=6
+20160812 13220601  ! http  mORMotHttpServer.TSQLHttpServer(01662BC0) {"THttpApiServer(0164A630)":{"Cloned":false,"RegisteredUrl":"http://+:8880/root/","HTTPQueueLength":1000,"MaxBandwidth":-1,"MaxConnections":-1,"APIVersion":"HTTP API 2.0","ServerName":"Synopse mORMot (Windows)","ProcessName":"root "}} initialized for root
+20160812 13220601  ; info  SetThreadName 0000298C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  ; trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000298C ThreadCount=7
+20160812 13220601  ) info  SetThreadName 000010C4=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  ) trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000010C4 ThreadCount=8
+20160812 13220601  < info  SetThreadName 000025A8=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  < trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000025A8 ThreadCount=9
+20160812 13220601  A info  SetThreadName 00002B44=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  A trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002B44 ThreadCount=10
+20160812 13220601  , info  SetThreadName 000028C4=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  , trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000028C4 ThreadCount=11
+20160812 13220601  * info  SetThreadName 00001558=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  * trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001558 ThreadCount=12
+20160812 13220601  + info  SetThreadName 000020F8=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  + trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000020F8 ThreadCount=13
+20160812 13220601  : info  SetThreadName 000029E4=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  : trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000029E4 ThreadCount=14
+20160812 13220601  7 info  SetThreadName 00001774=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  7 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001774 ThreadCount=15
+20160812 13220601  6 info  SetThreadName 00002070=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  6 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002070 ThreadCount=16
+20160812 13220601  2 info  SetThreadName 00002598=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  2 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002598 ThreadCount=17
+20160812 13220601  1 info  SetThreadName 00001014=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  1 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001014 ThreadCount=18
+20160812 13220601  0 info  SetThreadName 000028FC=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  0 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000028FC ThreadCount=19
+20160812 13220601  / info  SetThreadName 00000B78=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  / trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000B78 ThreadCount=20
+20160812 13220601  . info  SetThreadName 00002BF8=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  . trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002BF8 ThreadCount=21
+20160812 13220601  # info  SetThreadName 00001B30=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  # trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001B30 ThreadCount=22
+20160812 13220601  - info  SetThreadName 00002648=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  - trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002648 ThreadCount=23
+20160812 13220601  " info  SetThreadName 00000CF4=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  " trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000CF4 ThreadCount=24
+20160812 13220601  $ info  SetThreadName 000016BC=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  $ trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000016BC ThreadCount=25
+20160812 13220601  ' info  SetThreadName 0000020C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  ' trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000020C ThreadCount=26
+20160812 13220601  & info  SetThreadName 0000291C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  & trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000291C ThreadCount=27
+20160812 13220601  ( info  SetThreadName 000019B0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  ( trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000019B0 ThreadCount=28
+20160812 13220601  % info  SetThreadName 0000288C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  % trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000288C ThreadCount=29
+20160812 13220601  4 info  SetThreadName 000014C8=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  4 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000014C8 ThreadCount=30
+20160812 13220601  3 info  SetThreadName 00002178=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  3 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002178 ThreadCount=31
+20160812 13220601  5 info  SetThreadName 000015A0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220601  5 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000015A0 ThreadCount=32
+20160812 13220609  !  +    mORMotHttpServer.TSQLHttpServer(01662BC0).000000010011B925 
+20160812 13220609  !  -    00.000.001
+20160812 13220609  ! http  mORMotHttpServer.TSQLHttpServer(01662BC0) {"THttpApiServer(0164A630)":{"Cloned":false,"RegisteredUrl":"http://+:8880/root/","HTTPQueueLength":1000,"MaxBandwidth":-1,"MaxConnections":-1,"APIVersion":"HTTP API 2.0","ServerName":"Synopse mORMot (Windows)","ProcessName":"root "}} finalized for 1 server(s)
+20160812 13220609  ; trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=0000298C ThreadCount=31
+20160812 13220609  < trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000025A8 ThreadCount=29
+20160812 13220609  ) trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000010C4 ThreadCount=30
+20160812 13220609  A trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002B44 ThreadCount=28
+20160812 13220609  , trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000028C4 ThreadCount=27
+20160812 13220609  * trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001558 ThreadCount=26
+20160812 13220609  + trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000020F8 ThreadCount=25
+20160812 13220609  : trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000029E4 ThreadCount=24
+20160812 13220609  7 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001774 ThreadCount=23
+20160812 13220609  6 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002070 ThreadCount=22
+20160812 13220609  2 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002598 ThreadCount=21
+20160812 13220609  1 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001014 ThreadCount=20
+20160812 13220609  0 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000028FC ThreadCount=19
+20160812 13220609  / trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00000B78 ThreadCount=18
+20160812 13220609  . trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002BF8 ThreadCount=17
+20160812 13220609  # trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001B30 ThreadCount=16
+20160812 13220609  - trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002648 ThreadCount=15
+20160812 13220609  " trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00000CF4 ThreadCount=14
+20160812 13220609  $ trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000016BC ThreadCount=13
+20160812 13220609  ' trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=0000020C ThreadCount=12
+20160812 13220609  & trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=0000291C ThreadCount=11
+20160812 13220609  ( trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000019B0 ThreadCount=10
+20160812 13220609  % trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=0000288C ThreadCount=9
+20160812 13220609  4 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000014C8 ThreadCount=8
+20160812 13220609  3 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002178 ThreadCount=7
+20160812 13220609  5 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000015A0 ThreadCount=6
+20160812 13220609  8 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002080 ThreadCount=5
+20160812 13220609  9 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=0000123C ThreadCount=4
+20160812 13220609  = trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000029A4 ThreadCount=3
+20160812 13220609  > trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001600 ThreadCount=2
+20160812 13220609  ? trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001444 ThreadCount=0
+20160812 13220609  @ trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002AC8 ThreadCount=1
+20160812 13220609  !  +    mORMotSQLite3.TSQLRestServerDB(01615ED0).00000001000A8762 
+20160812 13220609  !  +    	mORMotSQLite3.TSQLRestServerDB(01615ED0).Shutdown CurrentRequestCount=0 File=
+20160812 13220609  !  -    	00.005.878
+20160812 13220609  !  +    	SynSQLite3.TSQLDatabase(01652220).Destroy 
+20160812 13220609  !  +    		00000001000B15E2 
+20160812 13220609  ! DB    			SynSQLite3.TSQLDatabase(01652220) closing ":memory:"
+20160812 13220609  !  -    		00.000.082
+20160812 13220609  !  -    	00.000.096
+20160812 13220609  !  -    00.006.020
+20160812 13220609  !  +    SynDBODBC.TODBCConnection(01652160).0000000100099206 
+20160812 13220609  !  -    00.000.000
+20160812 13220609  !  +    SynDBODBC.TODBCConnection(01652160).0000000100099024 
+20160812 13220609  !  -    00.000.001
+20160812 13220609  !  +    0000000100098953 
+20160812 13220611  ! debug 	Connected to MySQL using myodbc3.dll 5.5.5-10.1.14-MariaDB recognized as MySQL
+20160812 13220611  !  -    00.022.215
+20160812 13220611  !  +    SynSQLite3.TSQLDatabase(01652220).DBOpen 
+20160812 13220611  ! DB    	SynSQLite3.TSQLDatabase(01652220) ":memory:" database file opened with PageSize=1024 and CacheSize=2000
+20160812 13220611  !  -    00.000.161
+20160812 13220611  ! SQL   SynSQLite3.TSQLDatabase(01652220) 27us  returned 0 rows SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%';
+20160812 13220611  ! DB    mORMotSQLite3.TSQLRestServerDB(01615ED0) CreateMissingTables on {"TSQLDatabase(01652220)":{"FileName":":memory:","IsMemory":true,"UseCache":true,"TransactionActive":false,"BusyTimeout":0,"CacheSize":2000,"PageSize":1024,"PageCount":0,"FileSize":0,"WALMode":false,"Synchronous":"smFull","LockingMode":"lmNormal","MemoryMappedMB":0,"user_version":0,"OpenV2Flags":6,"BackupBackgroundInProcess":false,"BackupBackgroundLastTime":"","BackupBackgroundLastFileName":"","SQLite3Library":{"TSQLite3LibraryDynamic(015FBD90)":{"LibraryName":"sqlite3-64.dll","Version":"3.11.1 with internal MM"}}}}
+20160812 13220611  ! DB    mORMotSQLite3.TSQLRestServerDB(01615ED0) "GetTables":[]
+20160812 13220611  ! SQL   SynSQLite3.TSQLDatabase(01652220) 4us  BEGIN TRANSACTION;
+20160812 13220611  !  +    mORMotDB.TSQLRestStorageExternal(072D1050).Create TSQLINVM_PROD
+20160812 13220611  !  -    00.000.001
+20160812 13220611  ! info  mORMotDB.TSQLRestStorageExternal(072D1050) TSQLINVM_PROD {"TODBCConnectionProperties(0165A0B0)":{"Engine":"ODBC","ServerName":"","DatabaseNameSafe":"Driver=MySQL ODBC 3.51 Driver;Database=SAM;Server=124.109.2.164;Port=3307;USER=insysc;Password=insysc1234567890*","UserID":"","DBMS":"dMySQL","DBMSEngineName":"MySQL","BatchSendingAbilities":["cCreate"],"BatchMaxSentAtOnce":4096,"LoggedSQLMaxSize":0,"LogSQLStatementOnException":false,"ForcedSchemaName":"","UseCache":true,"RollbackOnDisconnect":true,"StoreVoidStringAsNull":false,"VariantStringAsWideString":false}} Server={"TSQLRestServerDB(01615ED0)":{"DB":{"TSQLDatabase(01652220)":{"FileName":":memory:","IsMemory":true,"UseCache":true,"TransactionActive":true,"BusyTimeout":0,"CacheSize":2000,"PageSize":1024,"PageCount":2,"FileSize":2048,"WALMode":false,"Synchronous":"smFull","LockingMode":"lmNormal","MemoryMappedMB":0,"user_version":0,"OpenV2Flags":6,"BackupBackgroundInProcess":false,"BackupBackgroundLastTime":"","BackupBackgroundLastFileName":"","SQLite3Library":{"TSQLite3LibraryDynamic(015FBD90)":{"LibraryName":"sqlite3-64.dll","Version":"3.11.1 with internal MM"}}}},"StatementLastException":"","NoAJAXJSON":false,"Options":[],"HandleAuthentication":false,"BypassORMAuthentication":[],"Stats":{"StartDate":"2016-08-12 13:22:06","Success":0,"ServiceMethod":0,"ServiceInterface":0,"OutcomingFiles":0,"CurrentThreadCount":0,"Created":0,"Read":0,"Updated":0,"Deleted":0,"ClientsCurrent":0,"ClientsMax":0,"CurrentRequestCount":0,"Input":{"Bytes":0,"Text":"0 B"},"Output":{"Bytes":0,"Text":"0 B"},"InputThroughput":{"BytesPerSec":0,"Text":"0 B/s"},"OutputThroughput":{"BytesPerSec":0,"Text":"0 B/s"},"Processing":false,"TaskCount":0,"TotalTime":{"MicroSec":0,"Text":"0us"},"LastTime":{"MicroSec":0,"Text":"0us"},"MinimalTime":{"MicroSec":0,"Text":"0us"},"AverageTime":{"MicroSec":0,"Text":"0us"},"MaximalTime":{"MicroSec":0,"Text":"0us"},"PerSec":0,"Errors":0,"LastError":null},"StatLevels":["mlTables","mlMethods","mlInterfaces","mlSQLite3"],"StaticVirtualTableDirect":true,"ServerTimeStamp":135322326406}}
+20160812 13220611  !  +    SynDBODBC.TODBCStatement(015DAA80).000000010009BACD 
+20160812 13220611  !  -    00.000.030
+20160812 13220611  !  +    SynDBODBC.TODBCStatement(015DAA80).000000010009B019 
+20160812 13220611  ! SQL   	SynDBODBC.TODBCStatement(015DAA80) select COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, NUMERIC_PRECISION, NUMERIC_SCALE, 0 INDEX_COUNT from INFORMATION_SCHEMA.COLUMNS where UPPER(TABLE_SCHEMA) = 'DRIVER=MYSQL ODBC 3.51 DRIVER;DATABASE=SAM;SERVER=124.109.2.164;PORT=3307;USER=INSYSC;PASSWORD=INSYSC1234567890*' and UPPER(TABLE_NAME) = 'INVM_PROD'
+20160812 13220611  !  -    00.009.791
+20160812 13220612  ! debug mORMotDB.TSQLRestStorageExternal(072D1050) "GetFields":[{"ColumnName":"ID","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":true},{"ColumnName":"PRDRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"PRDCDE","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDBAR","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDNAT","ColumnTypeNative":"varchar","ColumnLength":200,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDNAE","ColumnTypeNative":"varchar","ColumnLength":200,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDNSE","ColumnTypeNative":"varchar","ColumnLength":200,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"MANRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"PRDREG","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"PTYRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"UNIRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"PRDCOA","ColumnTypeNative":"decimal","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":4,"ColumnType":4,"ColumnIndexed":false},{"ColumnName":"PRDCOU","ColumnTypeNative":"decimal","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":4,"ColumnType":4,"ColumnIndexed":false},{"ColumnName":"ROURUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"VENRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"ROUCDE","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PSTRUN","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPCDE","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPBRN","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPDEP","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPSEC","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"ENTUSR","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"ENTDTE","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"ENTTIM","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"ENTWKS","ColumnTypeNative":"varchar","ColumnLength":100,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"MODUSR","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"MODDTE","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"MODTIM","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"MODWKS","ColumnTypeNative":"varchar","ColumnLength":100,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECACT","ColumnTypeNative":"varchar","ColumnLength":10,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECSTS","ColumnTypeNative":"varchar","ColumnLength":10,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECSEQ","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"RECFL1","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL2","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL3","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL4","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL5","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"ENTUID","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"MODUID","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false}]
+20160812 13220612  ! SQL   SynSQLite3.TSQLDatabase(01652220) 25.15ms  CREATE VIRTUAL TABLE INVM_PROD USING External(PRDRUN INTEGER, PRDCDE TEXT COLLATE SYSTEMNOCASE, PRDBAR TEXT COLLATE SYSTEMNOCASE, PRDNAT TEXT COLLATE SYSTEMNOCASE, PRDNAE TEXT COLLATE SYSTEMNOCASE, PRDNSE TEXT COLLATE SYSTEMNOCASE, MANRUN INTEGER, PRDREG TEXT COLLATE ISO8601, PTYRUN INTEGER, UNIRUN INTEGER, PRDCOA FLOAT, PRDCOU FLOAT, ROURUN INTEGER, VENRUN INTEGER, ROUCDE TEXT COLLATE SYSTEMNOCASE, PSTRUN TEXT COLLATE SYSTEMNOCASE, CMPCDE TEXT COLLATE SYSTEMNOCASE, CMPBRN TEXT COLLATE SYSTEMNOCASE, CMPDEP TEXT COLLATE SYSTEMNOCASE, CMPSEC TEXT COLLATE SYSTEMNOCASE, ENTUSR TEXT COLLATE SYSTEMNOCASE, ENTDTE TEXT COLLATE ISO8601, ENTTIM TEXT COLLATE ISO8601, ENTWKS TEXT COLLATE SYSTEMNOCASE, MODUSR TEXT COLLATE SYSTEMNOCASE, MODDTE TEXT COLLATE ISO8601, MODTIM TEXT COLLATE ISO8601, MODWKS TEXT COLLATE SYSTEMNOCASE, RECACT TEXT COLLATE SYSTEMNOCASE, RECSTS TEXT COLLATE SYSTEMNOCASE, RECSEQ INTEGER, RECFL1 TEXT COLLATE SYSTEMNOCASE, RECFL2 TEXT COLLATE SYSTEMNOCASE, RECFL3 TEXT COLLATE SYSTEMNOCASE, RECFL4 TEXT COLLATE SYSTEMNOCASE, RECFL5 TEXT COLLATE SYSTEMNOCASE, ENTUID INTEGER, MODUID INTEGER);
+20160812 13220612  !  +    SynDBODBC.TODBCStatement(015DA580).000000010009BACD 
+20160812 13220612  !  -    00.000.014
+20160812 13220612  !  +    SynDBODBC.TODBCStatement(015DA580).000000010009B019 
+20160812 13220612  ! SQL   	SynDBODBC.TODBCStatement(015DA580) select ID from INVM_PROD limit 1
+20160812 13220612  !  -    00.003.871
+20160812 13220612  ! SQL   SynSQLite3.TSQLDatabase(01652220) 15us  COMMIT TRANSACTION;
+20160812 13220612  !  +    mORMotHttpServer.TSQLHttpServer(01662BC0).Create useHttpApiRegisteringURI (secNone) on port 8880
+20160812 13220612  !  -    00.000.001
+20160812 13220612  ! http  mORMotHttpServer.TSQLHttpServer(01662BC0) http.sys registration of http://+:8880/root
+20160812 13220612  @ info  SetThreadName 00001A10=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220612  @ trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001A10 ThreadCount=1
+20160812 13220612  ? info  SetThreadName 00001D4C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220612  ? trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001D4C ThreadCount=2
+20160812 13220612  > info  SetThreadName 00000AA8=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220612  > trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000AA8 ThreadCount=3
+20160812 13220612  = info  SetThreadName 000026CC=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220612  = trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000026CC ThreadCount=4
+20160812 13220612  9 info  SetThreadName 00002434=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220612  9 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002434 ThreadCount=5
+20160812 13220612  8 info  SetThreadName 000024B8=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220612  8 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000024B8 ThreadCount=6
+20160812 13220612  ! http  mORMotHttpServer.TSQLHttpServer(01662BC0) {"THttpApiServer(0164A630)":{"Cloned":false,"RegisteredUrl":"http://+:8880/root/","HTTPQueueLength":1000,"MaxBandwidth":-1,"MaxConnections":-1,"APIVersion":"HTTP API 2.0","ServerName":"Synopse mORMot (Windows)","ProcessName":"root "}} initialized for root
+20160812 13220613  5 info  SetThreadName 00002738=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  5 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002738 ThreadCount=7
+20160812 13220613  3 info  SetThreadName 00002BD0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  3 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002BD0 ThreadCount=8
+20160812 13220613  4 info  SetThreadName 0000277C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  4 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000277C ThreadCount=9
+20160812 13220613  % info  SetThreadName 0000167C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  % trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000167C ThreadCount=10
+20160812 13220613  ( info  SetThreadName 0000257C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  ( trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000257C ThreadCount=11
+20160812 13220613  ' info  SetThreadName 000003F0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  ' trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000003F0 ThreadCount=12
+20160812 13220613  & info  SetThreadName 000010F0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  & trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000010F0 ThreadCount=13
+20160812 13220613  $ info  SetThreadName 00002594=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  $ trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002594 ThreadCount=14
+20160812 13220613  " info  SetThreadName 00001E2C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  " trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001E2C ThreadCount=15
+20160812 13220613  - info  SetThreadName 00000484=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  - trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000484 ThreadCount=16
+20160812 13220613  # info  SetThreadName 00001F18=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  # trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001F18 ThreadCount=17
+20160812 13220613  . info  SetThreadName 000029C8=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  . trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000029C8 ThreadCount=18
+20160812 13220613  / info  SetThreadName 00000F3C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  / trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000F3C ThreadCount=19
+20160812 13220613  0 info  SetThreadName 00002A98=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  0 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002A98 ThreadCount=20
+20160812 13220613  1 info  SetThreadName 00001BA4=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  1 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001BA4 ThreadCount=21
+20160812 13220613  2 info  SetThreadName 000003F4=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  2 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000003F4 ThreadCount=22
+20160812 13220613  6 info  SetThreadName 0000185C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  6 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000185C ThreadCount=23
+20160812 13220613  7 info  SetThreadName 00001470=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  7 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001470 ThreadCount=24
+20160812 13220613  : info  SetThreadName 0000210C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  : trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000210C ThreadCount=25
+20160812 13220613  + info  SetThreadName 00001A2C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  + trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001A2C ThreadCount=26
+20160812 13220613  * info  SetThreadName 0000246C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  * trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000246C ThreadCount=27
+20160812 13220613  , info  SetThreadName 000029AC=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  , trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000029AC ThreadCount=28
+20160812 13220613  A info  SetThreadName 00001A48=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  A trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001A48 ThreadCount=29
+20160812 13220613  ; info  SetThreadName 00000328=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  ; trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000328 ThreadCount=30
+20160812 13220613  ) info  SetThreadName 000027B8=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  ) trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000027B8 ThreadCount=31
+20160812 13220613  < info  SetThreadName 0000186C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220613  < trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000186C ThreadCount=32
+20160812 13220618  !  +    mORMotHttpServer.TSQLHttpServer(01662BC0).000000010011B925 
+20160812 13220618  !  -    00.000.001
+20160812 13220618  ! http  mORMotHttpServer.TSQLHttpServer(01662BC0) {"THttpApiServer(0164A630)":{"Cloned":false,"RegisteredUrl":"http://+:8880/root/","HTTPQueueLength":1000,"MaxBandwidth":-1,"MaxConnections":-1,"APIVersion":"HTTP API 2.0","ServerName":"Synopse mORMot (Windows)","ProcessName":"root "}} finalized for 1 server(s)
+20160812 13220618  = trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000026CC ThreadCount=31
+20160812 13220618  8 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000024B8 ThreadCount=30
+20160812 13220618  3 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002BD0 ThreadCount=29
+20160812 13220618  4 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=0000277C ThreadCount=28
+20160812 13220618  % trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=0000167C ThreadCount=27
+20160812 13220618  ( trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=0000257C ThreadCount=26
+20160812 13220618  ' trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000003F0 ThreadCount=25
+20160812 13220618  & trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000010F0 ThreadCount=24
+20160812 13220618  $ trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002594 ThreadCount=23
+20160812 13220618  " trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001E2C ThreadCount=22
+20160812 13220618  - trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00000484 ThreadCount=21
+20160812 13220618  # trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001F18 ThreadCount=20
+20160812 13220618  . trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000029C8 ThreadCount=19
+20160812 13220618  / trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00000F3C ThreadCount=18
+20160812 13220618  2 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000003F4 ThreadCount=15
+20160812 13220618  1 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001BA4 ThreadCount=16
+20160812 13220618  6 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=0000185C ThreadCount=14
+20160812 13220618  7 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001470 ThreadCount=13
+20160812 13220618  : trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=0000210C ThreadCount=12
+20160812 13220618  + trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001A2C ThreadCount=11
+20160812 13220618  * trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=0000246C ThreadCount=10
+20160812 13220618  A trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001A48 ThreadCount=9
+20160812 13220618  , trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000029AC ThreadCount=8
+20160812 13220618  ; trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00000328 ThreadCount=7
+20160812 13220618  ) trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000027B8 ThreadCount=6
+20160812 13220618  < trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=0000186C ThreadCount=5
+20160812 13220618  0 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002A98 ThreadCount=17
+20160812 13220618  @ trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001A10 ThreadCount=4
+20160812 13220618  ? trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001D4C ThreadCount=3
+20160812 13220618  > trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00000AA8 ThreadCount=2
+20160812 13220618  5 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002738 ThreadCount=1
+20160812 13220618  9 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002434 ThreadCount=0
+20160812 13220618  !  +    mORMotSQLite3.TSQLRestServerDB(01615ED0).00000001000A8762 
+20160812 13220618  !  +    	mORMotSQLite3.TSQLRestServerDB(01615ED0).Shutdown CurrentRequestCount=0 File=
+20160812 13220619  !  -    	00.005.640
+20160812 13220619  !  +    	SynSQLite3.TSQLDatabase(01652220).Destroy 
+20160812 13220619  !  +    		00000001000B15E2 
+20160812 13220619  ! DB    			SynSQLite3.TSQLDatabase(01652220) closing ":memory:"
+20160812 13220619  !  -    		00.000.079
+20160812 13220619  !  -    	00.000.092
+20160812 13220619  !  -    00.005.775
+20160812 13220619  !  +    SynDBODBC.TODBCConnection(01652160).0000000100099206 
+20160812 13220619  !  -    00.000.000
+20160812 13220619  !  +    SynDBODBC.TODBCConnection(01652160).0000000100099024 
+20160812 13220619  !  -    00.000.001
+20160812 13220619  !  +    0000000100098953 
+20160812 13220620  ! debug 	Connected to MySQL using myodbc3.dll 5.5.5-10.1.14-MariaDB recognized as MySQL
+20160812 13220620  !  -    00.024.527
+20160812 13220620  !  +    SynSQLite3.TSQLDatabase(01652220).DBOpen 
+20160812 13220620  ! DB    	SynSQLite3.TSQLDatabase(01652220) ":memory:" database file opened with PageSize=1024 and CacheSize=2000
+20160812 13220620  !  -    00.000.156
+20160812 13220620  ! SQL   SynSQLite3.TSQLDatabase(01652220) 27us  returned 0 rows SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%';
+20160812 13220620  ! DB    mORMotSQLite3.TSQLRestServerDB(01615ED0) CreateMissingTables on {"TSQLDatabase(01652220)":{"FileName":":memory:","IsMemory":true,"UseCache":true,"TransactionActive":false,"BusyTimeout":0,"CacheSize":2000,"PageSize":1024,"PageCount":0,"FileSize":0,"WALMode":false,"Synchronous":"smFull","LockingMode":"lmNormal","MemoryMappedMB":0,"user_version":0,"OpenV2Flags":6,"BackupBackgroundInProcess":false,"BackupBackgroundLastTime":"","BackupBackgroundLastFileName":"","SQLite3Library":{"TSQLite3LibraryDynamic(015FBD90)":{"LibraryName":"sqlite3-64.dll","Version":"3.11.1 with internal MM"}}}}
+20160812 13220620  ! DB    mORMotSQLite3.TSQLRestServerDB(01615ED0) "GetTables":[]
+20160812 13220620  ! SQL   SynSQLite3.TSQLDatabase(01652220) 4us  BEGIN TRANSACTION;
+20160812 13220620  !  +    mORMotDB.TSQLRestStorageExternal(0167FAB0).Create TSQLINVM_PROD
+20160812 13220620  !  -    00.000.001
+20160812 13220620  ! info  mORMotDB.TSQLRestStorageExternal(0167FAB0) TSQLINVM_PROD {"TODBCConnectionProperties(0165A0B0)":{"Engine":"ODBC","ServerName":"","DatabaseNameSafe":"Driver=MySQL ODBC 3.51 Driver;Database=SAM;Server=124.109.2.164;Port=3307;USER=insysc;Password=insysc1234567890*","UserID":"","DBMS":"dMySQL","DBMSEngineName":"MySQL","BatchSendingAbilities":["cCreate"],"BatchMaxSentAtOnce":4096,"LoggedSQLMaxSize":0,"LogSQLStatementOnException":false,"ForcedSchemaName":"","UseCache":true,"RollbackOnDisconnect":true,"StoreVoidStringAsNull":false,"VariantStringAsWideString":false}} Server={"TSQLRestServerDB(01615ED0)":{"DB":{"TSQLDatabase(01652220)":{"FileName":":memory:","IsMemory":true,"UseCache":true,"TransactionActive":true,"BusyTimeout":0,"CacheSize":2000,"PageSize":1024,"PageCount":2,"FileSize":2048,"WALMode":false,"Synchronous":"smFull","LockingMode":"lmNormal","MemoryMappedMB":0,"user_version":0,"OpenV2Flags":6,"BackupBackgroundInProcess":false,"BackupBackgroundLastTime":"","BackupBackgroundLastFileName":"","SQLite3Library":{"TSQLite3LibraryDynamic(015FBD90)":{"LibraryName":"sqlite3-64.dll","Version":"3.11.1 with internal MM"}}}},"StatementLastException":"","NoAJAXJSON":false,"Options":[],"HandleAuthentication":false,"BypassORMAuthentication":[],"Stats":{"StartDate":"2016-08-12 13:22:06","Success":0,"ServiceMethod":0,"ServiceInterface":0,"OutcomingFiles":0,"CurrentThreadCount":0,"Created":0,"Read":0,"Updated":0,"Deleted":0,"ClientsCurrent":0,"ClientsMax":0,"CurrentRequestCount":0,"Input":{"Bytes":0,"Text":"0 B"},"Output":{"Bytes":0,"Text":"0 B"},"InputThroughput":{"BytesPerSec":0,"Text":"0 B/s"},"OutputThroughput":{"BytesPerSec":0,"Text":"0 B/s"},"Processing":false,"TaskCount":0,"TotalTime":{"MicroSec":0,"Text":"0us"},"LastTime":{"MicroSec":0,"Text":"0us"},"MinimalTime":{"MicroSec":0,"Text":"0us"},"AverageTime":{"MicroSec":0,"Text":"0us"},"MaximalTime":{"MicroSec":0,"Text":"0us"},"PerSec":0,"Errors":0,"LastError":null},"StatLevels":["mlTables","mlMethods","mlInterfaces","mlSQLite3"],"StaticVirtualTableDirect":true,"ServerTimeStamp":135322326406}}
+20160812 13220620  !  +    SynDBODBC.TODBCStatement(015DAA80).000000010009BACD 
+20160812 13220620  !  -    00.000.036
+20160812 13220620  !  +    SynDBODBC.TODBCStatement(015DAA80).000000010009B019 
+20160812 13220620  ! SQL   	SynDBODBC.TODBCStatement(015DAA80) select COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, NUMERIC_PRECISION, NUMERIC_SCALE, 0 INDEX_COUNT from INFORMATION_SCHEMA.COLUMNS where UPPER(TABLE_SCHEMA) = 'DRIVER=MYSQL ODBC 3.51 DRIVER;DATABASE=SAM;SERVER=124.109.2.164;PORT=3307;USER=INSYSC;PASSWORD=INSYSC1234567890*' and UPPER(TABLE_NAME) = 'INVM_PROD'
+20160812 13220621  !  -    00.011.575
+20160812 13220622  ! debug mORMotDB.TSQLRestStorageExternal(0167FAB0) "GetFields":[{"ColumnName":"ID","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":true},{"ColumnName":"PRDRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"PRDCDE","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDBAR","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDNAT","ColumnTypeNative":"varchar","ColumnLength":200,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDNAE","ColumnTypeNative":"varchar","ColumnLength":200,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDNSE","ColumnTypeNative":"varchar","ColumnLength":200,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"MANRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"PRDREG","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"PTYRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"UNIRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"PRDCOA","ColumnTypeNative":"decimal","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":4,"ColumnType":4,"ColumnIndexed":false},{"ColumnName":"PRDCOU","ColumnTypeNative":"decimal","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":4,"ColumnType":4,"ColumnIndexed":false},{"ColumnName":"ROURUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"VENRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"ROUCDE","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PSTRUN","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPCDE","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPBRN","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPDEP","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPSEC","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"ENTUSR","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"ENTDTE","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"ENTTIM","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"ENTWKS","ColumnTypeNative":"varchar","ColumnLength":100,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"MODUSR","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"MODDTE","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"MODTIM","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"MODWKS","ColumnTypeNative":"varchar","ColumnLength":100,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECACT","ColumnTypeNative":"varchar","ColumnLength":10,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECSTS","ColumnTypeNative":"varchar","ColumnLength":10,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECSEQ","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"RECFL1","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL2","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL3","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL4","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL5","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"ENTUID","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"MODUID","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false}]
+20160812 13220622  ! SQL   SynSQLite3.TSQLDatabase(01652220) 34.67ms  CREATE VIRTUAL TABLE INVM_PROD USING External(PRDRUN INTEGER, PRDCDE TEXT COLLATE SYSTEMNOCASE, PRDBAR TEXT COLLATE SYSTEMNOCASE, PRDNAT TEXT COLLATE SYSTEMNOCASE, PRDNAE TEXT COLLATE SYSTEMNOCASE, PRDNSE TEXT COLLATE SYSTEMNOCASE, MANRUN INTEGER, PRDREG TEXT COLLATE ISO8601, PTYRUN INTEGER, UNIRUN INTEGER, PRDCOA FLOAT, PRDCOU FLOAT, ROURUN INTEGER, VENRUN INTEGER, ROUCDE TEXT COLLATE SYSTEMNOCASE, PSTRUN TEXT COLLATE SYSTEMNOCASE, CMPCDE TEXT COLLATE SYSTEMNOCASE, CMPBRN TEXT COLLATE SYSTEMNOCASE, CMPDEP TEXT COLLATE SYSTEMNOCASE, CMPSEC TEXT COLLATE SYSTEMNOCASE, ENTUSR TEXT COLLATE SYSTEMNOCASE, ENTDTE TEXT COLLATE ISO8601, ENTTIM TEXT COLLATE ISO8601, ENTWKS TEXT COLLATE SYSTEMNOCASE, MODUSR TEXT COLLATE SYSTEMNOCASE, MODDTE TEXT COLLATE ISO8601, MODTIM TEXT COLLATE ISO8601, MODWKS TEXT COLLATE SYSTEMNOCASE, RECACT TEXT COLLATE SYSTEMNOCASE, RECSTS TEXT COLLATE SYSTEMNOCASE, RECSEQ INTEGER, RECFL1 TEXT COLLATE SYSTEMNOCASE, RECFL2 TEXT COLLATE SYSTEMNOCASE, RECFL3 TEXT COLLATE SYSTEMNOCASE, RECFL4 TEXT COLLATE SYSTEMNOCASE, RECFL5 TEXT COLLATE SYSTEMNOCASE, ENTUID INTEGER, MODUID INTEGER);
+20160812 13220622  !  +    SynDBODBC.TODBCStatement(015DA940).000000010009BACD 
+20160812 13220622  !  -    00.000.049
+20160812 13220622  !  +    SynDBODBC.TODBCStatement(015DA940).000000010009B019 
+20160812 13220622  ! SQL   	SynDBODBC.TODBCStatement(015DA940) select ID from INVM_PROD limit 1
+20160812 13220622  !  -    00.004.912
+20160812 13220622  ! SQL   SynSQLite3.TSQLDatabase(01652220) 57us  COMMIT TRANSACTION;
+20160812 13220622  !  +    mORMotHttpServer.TSQLHttpServer(01662BC0).Create useHttpApiRegisteringURI (secNone) on port 8880
+20160812 13220622  !  -    00.000.006
+20160812 13220622  ! http  mORMotHttpServer.TSQLHttpServer(01662BC0) http.sys registration of http://+:8880/root
+20160812 13220622  9 info  SetThreadName 00001D94=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220622  9 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001D94 ThreadCount=1
+20160812 13220622  5 info  SetThreadName 0000296C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220622  5 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000296C ThreadCount=2
+20160812 13220622  > info  SetThreadName 00002A64=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220622  > trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002A64 ThreadCount=3
+20160812 13220622  ? info  SetThreadName 00000DEC=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220622  ? trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000DEC ThreadCount=4
+20160812 13220622  @ info  SetThreadName 000026D8=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220622  @ trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000026D8 ThreadCount=5
+20160812 13220622  0 info  SetThreadName 000016EC=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220622  0 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000016EC ThreadCount=6
+20160812 13220622  < info  SetThreadName 00002888=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220622  < trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002888 ThreadCount=7
+20160812 13220622  ! http  mORMotHttpServer.TSQLHttpServer(01662BC0) {"THttpApiServer(0164A630)":{"Cloned":false,"RegisteredUrl":"http://+:8880/root/","HTTPQueueLength":1000,"MaxBandwidth":-1,"MaxConnections":-1,"APIVersion":"HTTP API 2.0","ServerName":"Synopse mORMot (Windows)","ProcessName":"root "}} initialized for root
+20160812 13220622  ) info  SetThreadName 00000EE0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220622  ) trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000EE0 ThreadCount=8
+20160812 13220622  ; info  SetThreadName 0000255C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220622  ; trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000255C ThreadCount=9
+20160812 13220622  , info  SetThreadName 00000D28=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220622  , trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000D28 ThreadCount=10
+20160812 13220622  A info  SetThreadName 00001E6C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220622  A trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001E6C ThreadCount=11
+20160812 13220622  * info  SetThreadName 000017B0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220622  * trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000017B0 ThreadCount=12
+20160812 13220622  + info  SetThreadName 00002560=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220622  + trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002560 ThreadCount=13
+20160812 13220622  : info  SetThreadName 0000200C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220622  : trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000200C ThreadCount=14
+20160812 13220623  7 info  SetThreadName 000005EC=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220623  7 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000005EC ThreadCount=15
+20160812 13220623  6 info  SetThreadName 000013C4=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220623  6 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000013C4 ThreadCount=16
+20160812 13220623  1 info  SetThreadName 00001768=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220623  1 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001768 ThreadCount=17
+20160812 13220623  2 info  SetThreadName 00000F68=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220623  2 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000F68 ThreadCount=18
+20160812 13220623  / info  SetThreadName 00000E18=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220623  / trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000E18 ThreadCount=19
+20160812 13220623  . info  SetThreadName 000012A4=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220623  . trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000012A4 ThreadCount=20
+20160812 13220623  # info  SetThreadName 00002084=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220623  # trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002084 ThreadCount=21
+20160812 13220623  - info  SetThreadName 000003E0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220623  - trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000003E0 ThreadCount=22
+20160812 13220623  " info  SetThreadName 000018E0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220623  " trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000018E0 ThreadCount=23
+20160812 13220623  $ info  SetThreadName 000019C4=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220623  $ trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000019C4 ThreadCount=24
+20160812 13220623  & info  SetThreadName 00002220=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220623  & trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002220 ThreadCount=25
+20160812 13220623  ' info  SetThreadName 000017FC=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220623  ' trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000017FC ThreadCount=26
+20160812 13220623  ( info  SetThreadName 00001EF0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220623  ( trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001EF0 ThreadCount=27
+20160812 13220623  % info  SetThreadName 00002238=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220623  % trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002238 ThreadCount=28
+20160812 13220623  4 info  SetThreadName 00001A64=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220623  4 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001A64 ThreadCount=29
+20160812 13220623  3 info  SetThreadName 00001BBC=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220623  3 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001BBC ThreadCount=30
+20160812 13220623  8 info  SetThreadName 00000A50=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220623  8 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000A50 ThreadCount=31
+20160812 13220623  = info  SetThreadName 00001CE4=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220623  = trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001CE4 ThreadCount=32
+20160812 13220628  !  +    mORMotHttpServer.TSQLHttpServer(01662BC0).000000010011B925 
+20160812 13220628  !  -    00.000.001
+20160812 13220628  ! http  mORMotHttpServer.TSQLHttpServer(01662BC0) {"THttpApiServer(0164A630)":{"Cloned":false,"RegisteredUrl":"http://+:8880/root/","HTTPQueueLength":1000,"MaxBandwidth":-1,"MaxConnections":-1,"APIVersion":"HTTP API 2.0","ServerName":"Synopse mORMot (Windows)","ProcessName":"root "}} finalized for 1 server(s)
+20160812 13220628  ; trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=0000255C ThreadCount=31
+20160812 13220628  ) trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00000EE0 ThreadCount=30
+20160812 13220628  , trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00000D28 ThreadCount=29
+20160812 13220628  A trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001E6C ThreadCount=28
+20160812 13220628  * trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000017B0 ThreadCount=27
+20160812 13220628  + trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002560 ThreadCount=26
+20160812 13220628  : trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=0000200C ThreadCount=25
+20160812 13220628  7 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000005EC ThreadCount=24
+20160812 13220628  1 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001768 ThreadCount=22
+20160812 13220628  2 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00000F68 ThreadCount=21
+20160812 13220628  / trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00000E18 ThreadCount=20
+20160812 13220628  . trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000012A4 ThreadCount=19
+20160812 13220628  # trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002084 ThreadCount=18
+20160812 13220628  - trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000003E0 ThreadCount=17
+20160812 13220628  " trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000018E0 ThreadCount=16
+20160812 13220628  $ trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000019C4 ThreadCount=15
+20160812 13220628  & trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002220 ThreadCount=14
+20160812 13220628  ' trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000017FC ThreadCount=13
+20160812 13220628  ( trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001EF0 ThreadCount=12
+20160812 13220628  % trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002238 ThreadCount=11
+20160812 13220628  4 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001A64 ThreadCount=10
+20160812 13220628  3 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001BBC ThreadCount=9
+20160812 13220628  8 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00000A50 ThreadCount=8
+20160812 13220628  = trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001CE4 ThreadCount=7
+20160812 13220628  6 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000013C4 ThreadCount=23
+20160812 13220628  5 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=0000296C ThreadCount=6
+20160812 13220628  9 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001D94 ThreadCount=5
+20160812 13220628  > trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002A64 ThreadCount=4
+20160812 13220628  @ trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000026D8 ThreadCount=3
+20160812 13220628  ? trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00000DEC ThreadCount=2
+20160812 13220628  0 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000016EC ThreadCount=1
+20160812 13220628  < trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002888 ThreadCount=0
+20160812 13220628  !  +    mORMotSQLite3.TSQLRestServerDB(01615ED0).00000001000A8762 
+20160812 13220628  !  +    	mORMotSQLite3.TSQLRestServerDB(01615ED0).Shutdown CurrentRequestCount=0 File=
+20160812 13220628  !  -    	00.005.081
+20160812 13220628  !  +    	SynSQLite3.TSQLDatabase(01652220).Destroy 
+20160812 13220628  !  +    		00000001000B15E2 
+20160812 13220628  ! DB    			SynSQLite3.TSQLDatabase(01652220) closing ":memory:"
+20160812 13220628  !  -    		00.000.079
+20160812 13220628  !  -    	00.000.092
+20160812 13220628  !  -    00.005.214
+20160812 13220628  !  +    SynDBODBC.TODBCConnection(01652160).0000000100099206 
+20160812 13220628  !  -    00.000.000
+20160812 13220628  !  +    SynDBODBC.TODBCConnection(01652160).0000000100099024 
+20160812 13220628  !  -    00.000.001
+20160812 13220628  !  +    0000000100098953 
+20160812 13220630  ! debug 	Connected to MySQL using myodbc3.dll 5.5.5-10.1.14-MariaDB recognized as MySQL
+20160812 13220630  !  -    00.023.367
+20160812 13220630  !  +    SynSQLite3.TSQLDatabase(01652220).DBOpen 
+20160812 13220630  ! DB    	SynSQLite3.TSQLDatabase(01652220) ":memory:" database file opened with PageSize=1024 and CacheSize=2000
+20160812 13220630  !  -    00.000.158
+20160812 13220630  ! SQL   SynSQLite3.TSQLDatabase(01652220) 28us  returned 0 rows SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%';
+20160812 13220630  ! DB    mORMotSQLite3.TSQLRestServerDB(01615ED0) CreateMissingTables on {"TSQLDatabase(01652220)":{"FileName":":memory:","IsMemory":true,"UseCache":true,"TransactionActive":false,"BusyTimeout":0,"CacheSize":2000,"PageSize":1024,"PageCount":0,"FileSize":0,"WALMode":false,"Synchronous":"smFull","LockingMode":"lmNormal","MemoryMappedMB":0,"user_version":0,"OpenV2Flags":6,"BackupBackgroundInProcess":false,"BackupBackgroundLastTime":"","BackupBackgroundLastFileName":"","SQLite3Library":{"TSQLite3LibraryDynamic(015FBD90)":{"LibraryName":"sqlite3-64.dll","Version":"3.11.1 with internal MM"}}}}
+20160812 13220630  ! DB    mORMotSQLite3.TSQLRestServerDB(01615ED0) "GetTables":[]
+20160812 13220630  ! SQL   SynSQLite3.TSQLDatabase(01652220) 4us  BEGIN TRANSACTION;
+20160812 13220630  !  +    mORMotDB.TSQLRestStorageExternal(072D0050).Create TSQLINVM_PROD
+20160812 13220630  !  -    00.000.001
+20160812 13220630  ! info  mORMotDB.TSQLRestStorageExternal(072D0050) TSQLINVM_PROD {"TODBCConnectionProperties(0165A0B0)":{"Engine":"ODBC","ServerName":"","DatabaseNameSafe":"Driver=MySQL ODBC 3.51 Driver;Database=SAM;Server=124.109.2.164;Port=3307;USER=insysc;Password=insysc1234567890*","UserID":"","DBMS":"dMySQL","DBMSEngineName":"MySQL","BatchSendingAbilities":["cCreate"],"BatchMaxSentAtOnce":4096,"LoggedSQLMaxSize":0,"LogSQLStatementOnException":false,"ForcedSchemaName":"","UseCache":true,"RollbackOnDisconnect":true,"StoreVoidStringAsNull":false,"VariantStringAsWideString":false}} Server={"TSQLRestServerDB(01615ED0)":{"DB":{"TSQLDatabase(01652220)":{"FileName":":memory:","IsMemory":true,"UseCache":true,"TransactionActive":true,"BusyTimeout":0,"CacheSize":2000,"PageSize":1024,"PageCount":2,"FileSize":2048,"WALMode":false,"Synchronous":"smFull","LockingMode":"lmNormal","MemoryMappedMB":0,"user_version":0,"OpenV2Flags":6,"BackupBackgroundInProcess":false,"BackupBackgroundLastTime":"","BackupBackgroundLastFileName":"","SQLite3Library":{"TSQLite3LibraryDynamic(015FBD90)":{"LibraryName":"sqlite3-64.dll","Version":"3.11.1 with internal MM"}}}},"StatementLastException":"","NoAJAXJSON":false,"Options":[],"HandleAuthentication":false,"BypassORMAuthentication":[],"Stats":{"StartDate":"2016-08-12 13:22:06","Success":0,"ServiceMethod":0,"ServiceInterface":0,"OutcomingFiles":0,"CurrentThreadCount":0,"Created":0,"Read":0,"Updated":0,"Deleted":0,"ClientsCurrent":0,"ClientsMax":0,"CurrentRequestCount":0,"Input":{"Bytes":0,"Text":"0 B"},"Output":{"Bytes":0,"Text":"0 B"},"InputThroughput":{"BytesPerSec":0,"Text":"0 B/s"},"OutputThroughput":{"BytesPerSec":0,"Text":"0 B/s"},"Processing":false,"TaskCount":0,"TotalTime":{"MicroSec":0,"Text":"0us"},"LastTime":{"MicroSec":0,"Text":"0us"},"MinimalTime":{"MicroSec":0,"Text":"0us"},"AverageTime":{"MicroSec":0,"Text":"0us"},"MaximalTime":{"MicroSec":0,"Text":"0us"},"PerSec":0,"Errors":0,"LastError":null},"StatLevels":["mlTables","mlMethods","mlInterfaces","mlSQLite3"],"StaticVirtualTableDirect":true,"ServerTimeStamp":135322326406}}
+20160812 13220630  !  +    SynDBODBC.TODBCStatement(015DAA80).000000010009BACD 
+20160812 13220630  !  -    00.000.030
+20160812 13220630  !  +    SynDBODBC.TODBCStatement(015DAA80).000000010009B019 
+20160812 13220630  ! SQL   	SynDBODBC.TODBCStatement(015DAA80) select COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, NUMERIC_PRECISION, NUMERIC_SCALE, 0 INDEX_COUNT from INFORMATION_SCHEMA.COLUMNS where UPPER(TABLE_SCHEMA) = 'DRIVER=MYSQL ODBC 3.51 DRIVER;DATABASE=SAM;SERVER=124.109.2.164;PORT=3307;USER=INSYSC;PASSWORD=INSYSC1234567890*' and UPPER(TABLE_NAME) = 'INVM_PROD'
+20160812 13220630  !  -    00.011.141
+20160812 13220632  ! debug mORMotDB.TSQLRestStorageExternal(072D0050) "GetFields":[{"ColumnName":"ID","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":true},{"ColumnName":"PRDRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"PRDCDE","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDBAR","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDNAT","ColumnTypeNative":"varchar","ColumnLength":200,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDNAE","ColumnTypeNative":"varchar","ColumnLength":200,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDNSE","ColumnTypeNative":"varchar","ColumnLength":200,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"MANRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"PRDREG","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"PTYRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"UNIRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"PRDCOA","ColumnTypeNative":"decimal","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":4,"ColumnType":4,"ColumnIndexed":false},{"ColumnName":"PRDCOU","ColumnTypeNative":"decimal","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":4,"ColumnType":4,"ColumnIndexed":false},{"ColumnName":"ROURUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"VENRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"ROUCDE","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PSTRUN","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPCDE","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPBRN","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPDEP","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPSEC","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"ENTUSR","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"ENTDTE","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"ENTTIM","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"ENTWKS","ColumnTypeNative":"varchar","ColumnLength":100,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"MODUSR","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"MODDTE","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"MODTIM","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"MODWKS","ColumnTypeNative":"varchar","ColumnLength":100,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECACT","ColumnTypeNative":"varchar","ColumnLength":10,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECSTS","ColumnTypeNative":"varchar","ColumnLength":10,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECSEQ","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"RECFL1","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL2","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL3","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL4","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL5","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"ENTUID","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"MODUID","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false}]
+20160812 13220632  ! SQL   SynSQLite3.TSQLDatabase(01652220) 30.59ms  CREATE VIRTUAL TABLE INVM_PROD USING External(PRDRUN INTEGER, PRDCDE TEXT COLLATE SYSTEMNOCASE, PRDBAR TEXT COLLATE SYSTEMNOCASE, PRDNAT TEXT COLLATE SYSTEMNOCASE, PRDNAE TEXT COLLATE SYSTEMNOCASE, PRDNSE TEXT COLLATE SYSTEMNOCASE, MANRUN INTEGER, PRDREG TEXT COLLATE ISO8601, PTYRUN INTEGER, UNIRUN INTEGER, PRDCOA FLOAT, PRDCOU FLOAT, ROURUN INTEGER, VENRUN INTEGER, ROUCDE TEXT COLLATE SYSTEMNOCASE, PSTRUN TEXT COLLATE SYSTEMNOCASE, CMPCDE TEXT COLLATE SYSTEMNOCASE, CMPBRN TEXT COLLATE SYSTEMNOCASE, CMPDEP TEXT COLLATE SYSTEMNOCASE, CMPSEC TEXT COLLATE SYSTEMNOCASE, ENTUSR TEXT COLLATE SYSTEMNOCASE, ENTDTE TEXT COLLATE ISO8601, ENTTIM TEXT COLLATE ISO8601, ENTWKS TEXT COLLATE SYSTEMNOCASE, MODUSR TEXT COLLATE SYSTEMNOCASE, MODDTE TEXT COLLATE ISO8601, MODTIM TEXT COLLATE ISO8601, MODWKS TEXT COLLATE SYSTEMNOCASE, RECACT TEXT COLLATE SYSTEMNOCASE, RECSTS TEXT COLLATE SYSTEMNOCASE, RECSEQ INTEGER, RECFL1 TEXT COLLATE SYSTEMNOCASE, RECFL2 TEXT COLLATE SYSTEMNOCASE, RECFL3 TEXT COLLATE SYSTEMNOCASE, RECFL4 TEXT COLLATE SYSTEMNOCASE, RECFL5 TEXT COLLATE SYSTEMNOCASE, ENTUID INTEGER, MODUID INTEGER);
+20160812 13220632  !  +    SynDBODBC.TODBCStatement(015DA580).000000010009BACD 
+20160812 13220632  !  -    00.000.046
+20160812 13220632  !  +    SynDBODBC.TODBCStatement(015DA580).000000010009B019 
+20160812 13220632  ! SQL   	SynDBODBC.TODBCStatement(015DA580) select ID from INVM_PROD limit 1
+20160812 13220632  !  -    00.004.488
+20160812 13220632  ! SQL   SynSQLite3.TSQLDatabase(01652220) 45us  COMMIT TRANSACTION;
+20160812 13220632  !  +    mORMotHttpServer.TSQLHttpServer(01662BC0).Create useHttpApiRegisteringURI (secNone) on port 8880
+20160812 13220632  !  -    00.000.005
+20160812 13220632  ! http  mORMotHttpServer.TSQLHttpServer(01662BC0) http.sys registration of http://+:8880/root
+20160812 13220632  < info  SetThreadName 00001658=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220632  < trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001658 ThreadCount=1
+20160812 13220632  0 info  SetThreadName 0000261C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220632  0 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000261C ThreadCount=2
+20160812 13220632  ? info  SetThreadName 0000292C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220632  ? trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000292C ThreadCount=3
+20160812 13220632  @ info  SetThreadName 00002B9C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220632  @ trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002B9C ThreadCount=4
+20160812 13220632  > info  SetThreadName 00002430=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220632  > trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002430 ThreadCount=5
+20160812 13220632  9 info  SetThreadName 00002588=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220632  9 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002588 ThreadCount=6
+20160812 13220632  5 info  SetThreadName 00002838=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220632  5 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002838 ThreadCount=7
+20160812 13220632  ! http  mORMotHttpServer.TSQLHttpServer(01662BC0) {"THttpApiServer(0164A630)":{"Cloned":false,"RegisteredUrl":"http://+:8880/root/","HTTPQueueLength":1000,"MaxBandwidth":-1,"MaxConnections":-1,"APIVersion":"HTTP API 2.0","ServerName":"Synopse mORMot (Windows)","ProcessName":"root "}} initialized for root
+20160812 13220632  6 info  SetThreadName 000025A4=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220632  6 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000025A4 ThreadCount=8
+20160812 13220632  = info  SetThreadName 00001724=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220632  = trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001724 ThreadCount=9
+20160812 13220632  8 info  SetThreadName 000021CC=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220632  8 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000021CC ThreadCount=10
+20160812 13220632  3 info  SetThreadName 00001CEC=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220632  3 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001CEC ThreadCount=11
+20160812 13220632  4 info  SetThreadName 00002810=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220632  4 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002810 ThreadCount=12
+20160812 13220632  % info  SetThreadName 00002A08=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220632  % trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002A08 ThreadCount=13
+20160812 13220632  ( info  SetThreadName 00002444=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220632  ( trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002444 ThreadCount=14
+20160812 13220632  ' info  SetThreadName 00001DDC=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220632  ' trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001DDC ThreadCount=15
+20160812 13220632  & info  SetThreadName 00002718=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220632  & trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002718 ThreadCount=16
+20160812 13220632  $ info  SetThreadName 00000A84=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220632  $ trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000A84 ThreadCount=17
+20160812 13220632  " info  SetThreadName 00000380=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220632  " trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000380 ThreadCount=18
+20160812 13220632  - info  SetThreadName 00001868=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220632  - trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001868 ThreadCount=19
+20160812 13220633  # info  SetThreadName 000022E0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220633  # trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000022E0 ThreadCount=20
+20160812 13220633  . info  SetThreadName 00001F74=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220633  . trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001F74 ThreadCount=21
+20160812 13220633  / info  SetThreadName 00001520=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220633  / trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001520 ThreadCount=22
+20160812 13220633  2 info  SetThreadName 000016A8=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220633  2 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000016A8 ThreadCount=23
+20160812 13220633  1 info  SetThreadName 000008F4=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220633  1 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000008F4 ThreadCount=24
+20160812 13220633  7 info  SetThreadName 00002980=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220633  7 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002980 ThreadCount=25
+20160812 13220633  : info  SetThreadName 000010C0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220633  : trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000010C0 ThreadCount=26
+20160812 13220633  + info  SetThreadName 00000A98=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220633  + trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000A98 ThreadCount=27
+20160812 13220633  * info  SetThreadName 00000F7C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220633  * trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000F7C ThreadCount=28
+20160812 13220633  A info  SetThreadName 00000EB8=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220633  A trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000EB8 ThreadCount=29
+20160812 13220633  , info  SetThreadName 00001878=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220633  , trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001878 ThreadCount=30
+20160812 13220633  ) info  SetThreadName 00002068=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220633  ) trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002068 ThreadCount=31
+20160812 13220633  ; info  SetThreadName 00002964=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220633  ; trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002964 ThreadCount=32
+20160812 13220638  !  +    mORMotHttpServer.TSQLHttpServer(01662BC0).000000010011B925 
+20160812 13220638  !  -    00.000.002
+20160812 13220638  ! http  mORMotHttpServer.TSQLHttpServer(01662BC0) {"THttpApiServer(0164A630)":{"Cloned":false,"RegisteredUrl":"http://+:8880/root/","HTTPQueueLength":1000,"MaxBandwidth":-1,"MaxConnections":-1,"APIVersion":"HTTP API 2.0","ServerName":"Synopse mORMot (Windows)","ProcessName":"root "}} finalized for 1 server(s)
+20160812 13220638  @ trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002B9C ThreadCount=31
+20160812 13220638  = trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001724 ThreadCount=30
+20160812 13220638  8 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000021CC ThreadCount=28
+20160812 13220638  3 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001CEC ThreadCount=27
+20160812 13220638  4 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002810 ThreadCount=26
+20160812 13220638  ( trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002444 ThreadCount=24
+20160812 13220638  % trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002A08 ThreadCount=25
+20160812 13220638  ' trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001DDC ThreadCount=23
+20160812 13220638  & trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002718 ThreadCount=22
+20160812 13220638  $ trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00000A84 ThreadCount=21
+20160812 13220638  " trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00000380 ThreadCount=20
+20160812 13220638  - trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001868 ThreadCount=19
+20160812 13220638  . trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001F74 ThreadCount=18
+20160812 13220638  / trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001520 ThreadCount=17
+20160812 13220638  2 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000016A8 ThreadCount=16
+20160812 13220638  1 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000008F4 ThreadCount=15
+20160812 13220638  7 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002980 ThreadCount=14
+20160812 13220638  : trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000010C0 ThreadCount=13
+20160812 13220638  + trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00000A98 ThreadCount=12
+20160812 13220638  * trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00000F7C ThreadCount=11
+20160812 13220638  , trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001878 ThreadCount=10
+20160812 13220638  A trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00000EB8 ThreadCount=9
+20160812 13220638  ) trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002068 ThreadCount=8
+20160812 13220638  ; trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002964 ThreadCount=7
+20160812 13220638  6 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000025A4 ThreadCount=29
+20160812 13220638  < trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00001658 ThreadCount=6
+20160812 13220638  0 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=0000261C ThreadCount=5
+20160812 13220638  ? trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=0000292C ThreadCount=4
+20160812 13220638  > trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002430 ThreadCount=3
+20160812 13220638  9 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002588 ThreadCount=2
+20160812 13220638  5 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=00002838 ThreadCount=1
+20160812 13220638  # trace mORMotSQLite3.TSQLRestServerDB(01615ED0) EndCurrentThread(THttpApiServer) ThreadID=000022E0 ThreadCount=0
+20160812 13220638  !  +    mORMotSQLite3.TSQLRestServerDB(01615ED0).00000001000A8762 
+20160812 13220638  !  +    	mORMotSQLite3.TSQLRestServerDB(01615ED0).Shutdown CurrentRequestCount=0 File=
+20160812 13220638  !  -    	00.006.028
+20160812 13220638  !  +    	SynSQLite3.TSQLDatabase(01652220).Destroy 
+20160812 13220638  !  +    		00000001000B15E2 
+20160812 13220638  ! DB    			SynSQLite3.TSQLDatabase(01652220) closing ":memory:"
+20160812 13220638  !  -    		00.000.119
+20160812 13220638  !  -    	00.000.133
+20160812 13220638  !  -    00.006.216
+20160812 13220638  !  +    SynDBODBC.TODBCConnection(01652160).0000000100099206 
+20160812 13220638  !  -    00.000.000
+20160812 13220638  !  +    SynDBODBC.TODBCConnection(01652160).0000000100099024 
+20160812 13220638  !  -    00.000.001
+20160812 13220638  !  +    0000000100098953 
+20160812 13220640  ! debug 	Connected to MySQL using myodbc3.dll 5.5.5-10.1.14-MariaDB recognized as MySQL
+20160812 13220640  !  -    00.022.029
+20160812 13220640  !  +    SynSQLite3.TSQLDatabase(01652220).DBOpen 
+20160812 13220640  ! DB    	SynSQLite3.TSQLDatabase(01652220) ":memory:" database file opened with PageSize=1024 and CacheSize=2000
+20160812 13220640  !  -    00.000.169
+20160812 13220640  ! SQL   SynSQLite3.TSQLDatabase(01652220) 27us  returned 0 rows SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%';
+20160812 13220640  ! DB    mORMotSQLite3.TSQLRestServerDB(01615ED0) CreateMissingTables on {"TSQLDatabase(01652220)":{"FileName":":memory:","IsMemory":true,"UseCache":true,"TransactionActive":false,"BusyTimeout":0,"CacheSize":2000,"PageSize":1024,"PageCount":0,"FileSize":0,"WALMode":false,"Synchronous":"smFull","LockingMode":"lmNormal","MemoryMappedMB":0,"user_version":0,"OpenV2Flags":6,"BackupBackgroundInProcess":false,"BackupBackgroundLastTime":"","BackupBackgroundLastFileName":"","SQLite3Library":{"TSQLite3LibraryDynamic(015FBD90)":{"LibraryName":"sqlite3-64.dll","Version":"3.11.1 with internal MM"}}}}
+20160812 13220640  ! DB    mORMotSQLite3.TSQLRestServerDB(01615ED0) "GetTables":[]
+20160812 13220640  ! SQL   SynSQLite3.TSQLDatabase(01652220) 4us  BEGIN TRANSACTION;
+20160812 13220640  !  +    mORMotDB.TSQLRestStorageExternal(072D0050).Create TSQLINVM_PROD
+20160812 13220640  !  -    00.000.001
+20160812 13220640  ! info  mORMotDB.TSQLRestStorageExternal(072D0050) TSQLINVM_PROD {"TODBCConnectionProperties(0165A0B0)":{"Engine":"ODBC","ServerName":"","DatabaseNameSafe":"Driver=MySQL ODBC 3.51 Driver;Database=SAM;Server=124.109.2.164;Port=3307;USER=insysc;Password=insysc1234567890*","UserID":"","DBMS":"dMySQL","DBMSEngineName":"MySQL","BatchSendingAbilities":["cCreate"],"BatchMaxSentAtOnce":4096,"LoggedSQLMaxSize":0,"LogSQLStatementOnException":false,"ForcedSchemaName":"","UseCache":true,"RollbackOnDisconnect":true,"StoreVoidStringAsNull":false,"VariantStringAsWideString":false}} Server={"TSQLRestServerDB(01615ED0)":{"DB":{"TSQLDatabase(01652220)":{"FileName":":memory:","IsMemory":true,"UseCache":true,"TransactionActive":true,"BusyTimeout":0,"CacheSize":2000,"PageSize":1024,"PageCount":2,"FileSize":2048,"WALMode":false,"Synchronous":"smFull","LockingMode":"lmNormal","MemoryMappedMB":0,"user_version":0,"OpenV2Flags":6,"BackupBackgroundInProcess":false,"BackupBackgroundLastTime":"","BackupBackgroundLastFileName":"","SQLite3Library":{"TSQLite3LibraryDynamic(015FBD90)":{"LibraryName":"sqlite3-64.dll","Version":"3.11.1 with internal MM"}}}},"StatementLastException":"","NoAJAXJSON":false,"Options":[],"HandleAuthentication":false,"BypassORMAuthentication":[],"Stats":{"StartDate":"2016-08-12 13:22:06","Success":0,"ServiceMethod":0,"ServiceInterface":0,"OutcomingFiles":0,"CurrentThreadCount":0,"Created":0,"Read":0,"Updated":0,"Deleted":0,"ClientsCurrent":0,"ClientsMax":0,"CurrentRequestCount":0,"Input":{"Bytes":0,"Text":"0 B"},"Output":{"Bytes":0,"Text":"0 B"},"InputThroughput":{"BytesPerSec":0,"Text":"0 B/s"},"OutputThroughput":{"BytesPerSec":0,"Text":"0 B/s"},"Processing":false,"TaskCount":0,"TotalTime":{"MicroSec":0,"Text":"0us"},"LastTime":{"MicroSec":0,"Text":"0us"},"MinimalTime":{"MicroSec":0,"Text":"0us"},"AverageTime":{"MicroSec":0,"Text":"0us"},"MaximalTime":{"MicroSec":0,"Text":"0us"},"PerSec":0,"Errors":0,"LastError":null},"StatLevels":["mlTables","mlMethods","mlInterfaces","mlSQLite3"],"StaticVirtualTableDirect":true,"ServerTimeStamp":135322326406}}
+20160812 13220640  !  +    SynDBODBC.TODBCStatement(015DAA80).000000010009BACD 
+20160812 13220640  !  -    00.000.030
+20160812 13220640  !  +    SynDBODBC.TODBCStatement(015DAA80).000000010009B019 
+20160812 13220640  ! SQL   	SynDBODBC.TODBCStatement(015DAA80) select COLUMN_NAME, DATA_TYPE, CHARACTER_MAXIMUM_LENGTH, NUMERIC_PRECISION, NUMERIC_SCALE, 0 INDEX_COUNT from INFORMATION_SCHEMA.COLUMNS where UPPER(TABLE_SCHEMA) = 'DRIVER=MYSQL ODBC 3.51 DRIVER;DATABASE=SAM;SERVER=124.109.2.164;PORT=3307;USER=INSYSC;PASSWORD=INSYSC1234567890*' and UPPER(TABLE_NAME) = 'INVM_PROD'
+20160812 13220640  !  -    00.009.764
+20160812 13220642  ! debug mORMotDB.TSQLRestStorageExternal(072D0050) "GetFields":[{"ColumnName":"ID","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":true},{"ColumnName":"PRDRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"PRDCDE","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDBAR","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDNAT","ColumnTypeNative":"varchar","ColumnLength":200,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDNAE","ColumnTypeNative":"varchar","ColumnLength":200,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PRDNSE","ColumnTypeNative":"varchar","ColumnLength":200,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"MANRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"PRDREG","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"PTYRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"UNIRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"PRDCOA","ColumnTypeNative":"decimal","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":4,"ColumnType":4,"ColumnIndexed":false},{"ColumnName":"PRDCOU","ColumnTypeNative":"decimal","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":4,"ColumnType":4,"ColumnIndexed":false},{"ColumnName":"ROURUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"VENRUN","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"ROUCDE","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"PSTRUN","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPCDE","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPBRN","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPDEP","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"CMPSEC","ColumnTypeNative":"varchar","ColumnLength":5,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"ENTUSR","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"ENTDTE","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"ENTTIM","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"ENTWKS","ColumnTypeNative":"varchar","ColumnLength":100,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"MODUSR","ColumnTypeNative":"varchar","ColumnLength":60,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"MODDTE","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"MODTIM","ColumnTypeNative":"datetime","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":5,"ColumnIndexed":false},{"ColumnName":"MODWKS","ColumnTypeNative":"varchar","ColumnLength":100,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECACT","ColumnTypeNative":"varchar","ColumnLength":10,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECSTS","ColumnTypeNative":"varchar","ColumnLength":10,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECSEQ","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"RECFL1","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL2","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL3","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL4","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"RECFL5","ColumnTypeNative":"varchar","ColumnLength":3,"ColumnPrecision":0,"ColumnScale":0,"ColumnType":6,"ColumnIndexed":false},{"ColumnName":"ENTUID","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false},{"ColumnName":"MODUID","ColumnTypeNative":"bigint","ColumnLength":19,"ColumnPrecision":10,"ColumnScale":0,"ColumnType":2,"ColumnIndexed":false}]
+20160812 13220642  ! SQL   SynSQLite3.TSQLDatabase(01652220) 25.21ms  CREATE VIRTUAL TABLE INVM_PROD USING External(PRDRUN INTEGER, PRDCDE TEXT COLLATE SYSTEMNOCASE, PRDBAR TEXT COLLATE SYSTEMNOCASE, PRDNAT TEXT COLLATE SYSTEMNOCASE, PRDNAE TEXT COLLATE SYSTEMNOCASE, PRDNSE TEXT COLLATE SYSTEMNOCASE, MANRUN INTEGER, PRDREG TEXT COLLATE ISO8601, PTYRUN INTEGER, UNIRUN INTEGER, PRDCOA FLOAT, PRDCOU FLOAT, ROURUN INTEGER, VENRUN INTEGER, ROUCDE TEXT COLLATE SYSTEMNOCASE, PSTRUN TEXT COLLATE SYSTEMNOCASE, CMPCDE TEXT COLLATE SYSTEMNOCASE, CMPBRN TEXT COLLATE SYSTEMNOCASE, CMPDEP TEXT COLLATE SYSTEMNOCASE, CMPSEC TEXT COLLATE SYSTEMNOCASE, ENTUSR TEXT COLLATE SYSTEMNOCASE, ENTDTE TEXT COLLATE ISO8601, ENTTIM TEXT COLLATE ISO8601, ENTWKS TEXT COLLATE SYSTEMNOCASE, MODUSR TEXT COLLATE SYSTEMNOCASE, MODDTE TEXT COLLATE ISO8601, MODTIM TEXT COLLATE ISO8601, MODWKS TEXT COLLATE SYSTEMNOCASE, RECACT TEXT COLLATE SYSTEMNOCASE, RECSTS TEXT COLLATE SYSTEMNOCASE, RECSEQ INTEGER, RECFL1 TEXT COLLATE SYSTEMNOCASE, RECFL2 TEXT COLLATE SYSTEMNOCASE, RECFL3 TEXT COLLATE SYSTEMNOCASE, RECFL4 TEXT COLLATE SYSTEMNOCASE, RECFL5 TEXT COLLATE SYSTEMNOCASE, ENTUID INTEGER, MODUID INTEGER);
+20160812 13220642  !  +    SynDBODBC.TODBCStatement(015DA940).000000010009BACD 
+20160812 13220642  !  -    00.000.013
+20160812 13220642  !  +    SynDBODBC.TODBCStatement(015DA940).000000010009B019 
+20160812 13220642  ! SQL   	SynDBODBC.TODBCStatement(015DA940) select ID from INVM_PROD limit 1
+20160812 13220642  !  -    00.004.184
+20160812 13220642  ! SQL   SynSQLite3.TSQLDatabase(01652220) 15us  COMMIT TRANSACTION;
+20160812 13220642  !  +    mORMotHttpServer.TSQLHttpServer(01662BC0).Create useHttpApiRegisteringURI (secNone) on port 8880
+20160812 13220642  !  -    00.000.001
+20160812 13220642  ! http  mORMotHttpServer.TSQLHttpServer(01662BC0) http.sys registration of http://+:8880/root
+20160812 13220642  # info  SetThreadName 00000C50=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  # trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000C50 ThreadCount=1
+20160812 13220642  5 info  SetThreadName 00000180=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  5 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000180 ThreadCount=2
+20160812 13220642  9 info  SetThreadName 00000DF0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  9 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000DF0 ThreadCount=3
+20160812 13220642  > info  SetThreadName 000014C4=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  > trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000014C4 ThreadCount=4
+20160812 13220642  ? info  SetThreadName 00002840=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  ? trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002840 ThreadCount=5
+20160812 13220642  0 info  SetThreadName 00002930=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  0 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002930 ThreadCount=6
+20160812 13220642  ! http  mORMotHttpServer.TSQLHttpServer(01662BC0) {"THttpApiServer(0164A630)":{"Cloned":false,"RegisteredUrl":"http://+:8880/root/","HTTPQueueLength":1000,"MaxBandwidth":-1,"MaxConnections":-1,"APIVersion":"HTTP API 2.0","ServerName":"Synopse mORMot (Windows)","ProcessName":"root "}} initialized for root
+20160812 13220642  < info  SetThreadName 00001C14=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  < trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001C14 ThreadCount=7
+20160812 13220642  @ info  SetThreadName 00002524=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  @ trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002524 ThreadCount=8
+20160812 13220642  6 info  SetThreadName 00000708=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  6 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000708 ThreadCount=9
+20160812 13220642  ; info  SetThreadName 00002A8C=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  ; trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002A8C ThreadCount=10
+20160812 13220642  ) info  SetThreadName 00001864=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  ) trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001864 ThreadCount=11
+20160812 13220642  A info  SetThreadName 00002614=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  A trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002614 ThreadCount=12
+20160812 13220642  , info  SetThreadName 00000CBC=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  , trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000CBC ThreadCount=13
+20160812 13220642  * info  SetThreadName 00002794=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  * trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002794 ThreadCount=14
+20160812 13220642  + info  SetThreadName 00001660=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  + trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001660 ThreadCount=15
+20160812 13220642  : info  SetThreadName 00000140=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  : trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000140 ThreadCount=16
+20160812 13220642  7 info  SetThreadName 00002214=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  7 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002214 ThreadCount=17
+20160812 13220642  1 info  SetThreadName 00001250=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  1 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001250 ThreadCount=18
+20160812 13220642  2 info  SetThreadName 000017D4=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  2 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000017D4 ThreadCount=19
+20160812 13220642  / info  SetThreadName 000021E4=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  / trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000021E4 ThreadCount=20
+20160812 13220642  . info  SetThreadName 00001C98=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  . trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001C98 ThreadCount=21
+20160812 13220642  - info  SetThreadName 000021BC=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  - trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000021BC ThreadCount=22
+20160812 13220642  " info  SetThreadName 00001C08=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  " trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001C08 ThreadCount=23
+20160812 13220642  $ info  SetThreadName 00001CE8=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  $ trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001CE8 ThreadCount=24
+20160812 13220642  & info  SetThreadName 000022EC=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  & trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000022EC ThreadCount=25
+20160812 13220642  ' info  SetThreadName 00001B90=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  ' trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001B90 ThreadCount=26
+20160812 13220642  % info  SetThreadName 000018A4=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  % trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000018A4 ThreadCount=27
+20160812 13220642  ( info  SetThreadName 00000FF0=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  ( trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000FF0 ThreadCount=28
+20160812 13220642  4 info  SetThreadName 00000844=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  4 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000844 ThreadCount=29
+20160812 13220642  3 info  SetThreadName 000026C8=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  3 trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=000026C8 ThreadCount=30
+20160812 13220642  = info  SetThreadName 00002A90=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  = trace mORMotSQLite3.TSQLRestServerDB(01615ED0) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002A90 ThreadCount=31
+20160812 13220642  8 info  SetThreadName 00001184=TSQLHttpServer 8880/root THttpApiServer
+20160812 13220642  8 trace mORMotSQLite3.TSQLRestServerDB(
