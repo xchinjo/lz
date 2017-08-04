@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CONFIG>
-  <Compiler Value="/usr/bin/fpc" Date="1454174389"/>
-  <Params Value=" -MObjFPC -Scghi -Cg -O1 -g -gl -l -vewnhibq &quot;-Fi/home/joni/mORMotLz/SQLite3/Samples/28 - Simple RESTful ORM Server/lib/x86_64-linux&quot; -Fu/home/joni/mORMotLz/SQLite3 -Fu/home/joni/mORMotLz &quot;-Fu/home/joni/mORMotLz/SQLite3/Samples/28 - Simple RESTful ORM Server/&quot; &quot;-FU/home/joni/mORMotLz/SQLite3/Samples/28 - Simple RESTful ORM Server/lib/x86_64-linux/&quot; project28.lpr"/>
-</CONFIG>
