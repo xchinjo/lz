@@ -1,31 +1,0 @@
-/home/joni/mORMot/SQLite3/Samples/LzServer/sam001 0.0.0.0 (2017-01-19 23:54:12)Host=devsvr.aonangtravel.xyz User=unknown CPU=0:FFFBAB1F0332FAFFAB27000000 OS=Linux-3.10.0-514.2.2.el7.x86_64#1-SMP-Tue-Dec-6-23:06:41-UTC-2016 Wow64=0 Freq=1000000000TSQLLog 1.18.3331 FTS3 2017-01-19T16:55:1320170119 16551349  !  +    mORMotHttpServer.TSQLHttpServer(00007FAB1ACEA000).Create useHttpSocket (secNone) on port 8880
-20170119 16551349  !  -    00.000.012
-20170119 16551349  " info  SetThreadName 00007FAB1ACB0700=TSQLHttpServer 8880/root THttpServer
-20170119 16551349  ! http  mORMotHttpServer.TSQLHttpServer(00007FAB1ACEA000) {"THttpServer(00007FAB1ACD9B80)":{"ServerConnectionCount":0,"ServerKeepAliveTimeOut":3000,"TCPPrefix":"","ThreadPoolContentionCount":0,"ThreadPoolContentionAbortCount":0,"APIVersion":"Synopse CrossPlatform Socket Layer.514","ServerName":"mORMot (Linux)","ProcessName":"root "}} initialized for root
-20170119 16551349  " trace RESTServerClass.TNoteServer(00007FAB1AD4C8F0) BeginCurrentThread(THttpServer) root=root ThreadID=00007FAB1ACB0700 ThreadCount=1
-20170119 16553129  # info  SetThreadName 00007FAB13C30700=TSQLHttpServer 8880/root THttpServerResp
-20170119 16553129  # trace RESTServerClass.TNoteServer(00007FAB1AD4C8F0) BeginCurrentThread(THttpServerResp) root=root ThreadID=00007FAB13C30700 ThreadCount=2
-20170119 16553129  $ info  SetThreadName 00007FAB13B4F700=TSQLHttpServer 8880/root THttpServerResp
-20170119 16553129  $ trace RESTServerClass.TNoteServer(00007FAB1AD4C8F0) BeginCurrentThread(THttpServerResp) root=root ThreadID=00007FAB13B4F700 ThreadCount=3
-20170119 16553430  $ trace RESTServerClass.TNoteServer(00007FAB1AD4C8F0) EndCurrentThread(THttpServerResp) ThreadID=00007FAB13B4F700 ThreadCount=2
-20170119 16553432  $ trace RESTServerClass.TNoteServer(00007FAB1AD4C8F0) EndCurrentThread(THttpServerResp) ThreadID=00007FAB13C30700 ThreadCount=1
-20170119 16553762  $ info  SetThreadName 00007FAB13B4F700=TSQLHttpServer 8880/root THttpServerResp
-20170119 16553762  $ trace RESTServerClass.TNoteServer(00007FAB1AD4C8F0) BeginCurrentThread(THttpServerResp) root=root ThreadID=00007FAB13B4F700 ThreadCount=2
-20170119 16553762  % info  SetThreadName 00007FAB13838700=TSQLHttpServer 8880/root THttpServerResp
-20170119 16553762  % trace RESTServerClass.TNoteServer(00007FAB1AD4C8F0) BeginCurrentThread(THttpServerResp) root=root ThreadID=00007FAB13838700 ThreadCount=3
-20170119 16553762  & info  SetThreadName 00007FAB13C30700=TSQLHttpServer 8880/root THttpServerResp
-20170119 16553762  & trace RESTServerClass.TNoteServer(00007FAB1AD4C8F0) BeginCurrentThread(THttpServerResp) root=root ThreadID=00007FAB13C30700 ThreadCount=4
-20170119 16553762  ' info  SetThreadName 00007FAB13737700=TSQLHttpServer 8880/root THttpServerResp
-20170119 16553762  ' trace RESTServerClass.TNoteServer(00007FAB1AD4C8F0) BeginCurrentThread(THttpServerResp) root=root ThreadID=00007FAB13737700 ThreadCount=5
-20170119 16553762  &  +    RESTServerClass.TNoteServer(00007FAB1AD4C8F0).URI(GET root inlen=0)
-20170119 16553762  & debug 	RESTServerClass.TNoteServer(00007FAB1AD4C8F0) TSQLRestRoutingREST.Error: {  "errorCode":400,  "errorText":"Bad Request"  }
-20170119 16553762  & srvr  	RESTServerClass.TNoteServer(00007FAB1AD4C8F0)   GET root/ ORM-Get -> 400 with outlen=49 in  us
-20170119 16553762  &  -    00.000.113
-20170119 16554100  $ trace RESTServerClass.TNoteServer(00007FAB1AD4C8F0) EndCurrentThread(THttpServerResp) ThreadID=00007FAB13B4F700 ThreadCount=4
-20170119 16554100  $ trace RESTServerClass.TNoteServer(00007FAB1AD4C8F0) EndCurrentThread(THttpServerResp) ThreadID=00007FAB13737700 ThreadCount=3
-20170119 16554100  $ trace RESTServerClass.TNoteServer(00007FAB1AD4C8F0) EndCurrentThread(THttpServerResp) ThreadID=00007FAB13C30700 ThreadCount=2
-20170119 16554100  $ trace RESTServerClass.TNoteServer(00007FAB1AD4C8F0) EndCurrentThread(THttpServerResp) ThreadID=00007FAB13838700 ThreadCount=1
-20170119 16561100  $ info  SetThreadName 00007FAB13838700=TSQLHttpServer 8880/root THttpServerResp
-20170119 16561100  $ trace RESTServerClass.TNoteServer(00007FAB1AD4C8F0) BeginCurrentThread(THttpServerResp) root=root ThreadID=00007FAB13838700 ThreadCount=2
-20170119 16561100  $  +    RESTServerClass.TNoteServer(00007FAB1AD4C8F0).URI(GET root/INVM_PROD inlen=0)
-20170119 16561100  $ debug 	RESTServerClass.TNoteServer(00007FAB1AD4C8F0) 
