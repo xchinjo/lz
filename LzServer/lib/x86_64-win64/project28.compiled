@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <Compiler Value="C:\lazarus\fpc\3.0.0\bin\x86_64-win64\fpc.exe" Date="1213098656"/>
-  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -l -vewnhibq -FiD:\SourceCode\ABCSoft\RestWebapp\mORMotServerLz\lib\x86_64-win64 -FuD:\SourceCode\ABCSoft -FuD:\SourceCode -FuD:\SourceCode\ABCSoft\RestWebapp\mORMotServerLz\ -FUD:\SourceCode\ABCSoft\RestWebapp\mORMotServerLz\lib\x86_64-win64\ project28.lpr"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -l -vewnhibq -FiC:\SourceCode\lz\LzServer\lib\x86_64-win64 -FuC:\SourceCode\lz\mORMotLz -FuC:\SourceCode\lz\mORMotLz\SQLite3 -FuC:\SourceCode\lz\ZEOSDBO-7.1.4-stable\src\core -FuC:\SourceCode\lz\ZEOSDBO-7.1.4-stable\src\component -FuC:\SourceCode\lz\ZEOSDBO-7.1.4-stable\src\dbc -FuC:\SourceCode\lz\ZEOSDBO-7.1.4-stable\src\parsesql -FuC:\SourceCode\lz\ZEOSDBO-7.1.4-stable\src\plain -FuC:\SourceCode\lz\LzServer\ -FUC:\SourceCode\lz\LzServer\lib\x86_64-win64\ project28.lpr"/>
 </CONFIG>

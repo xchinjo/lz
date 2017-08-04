@@ -49,14 +49,10 @@ begin
 
    {$IFDEF UNIX}
    // for linux
-    aProps := TSQLDBZEOSConnectionProperties.Create('zdbc:firebird-2.5://127.0.0.1:3050//fbdb/sam.fdb?LibLocation=/usr/lib64/libfbclient.so;username=sysdba;password=masterkey','/fbdb/ErpDB.FDB','SYSDBA','masterkey');
+    aProps := TSQLDBZEOSConnectionProperties.Create('zdbc:firebird-2.5://127.0.0.1:3050//fbdb/sam.fdb?LibLocation=/usr/lib64/libfbclient.so;username=sysdba;password=masterkey','/fbdb/sam.fdb','SYSDBA','masterkey');
    {$ELSE}
     // for win
-    //   aProps := TODBCConnectionProperties.Create('','Driver=MySQL ODBC 3.51 Driver'+
-   aProps := TODBCConnectionProperties.Create('','Driver=MySQL ODBC 5.3 Unicode Driver'+
-   //aProps := TODBCConnectionProperties.Create('','MySQL'+
-         ';Database=SAM;'+
-         'Server=124.109.2.164;Port=3307;USER=abcsoft;Password=123456','','');
+    aProps := TSQLDBZEOSConnectionProperties.Create('zdbc:firebird-2.5://192.168.2.109:3050//fbdb/sam.fdb?LibLocation=fbclient.dll;username=sysdba;password=masterkey','/fbdb/sam.fdb','SYSDBA','masterkey');
    {$ENDIF}
 
 
@@ -125,59 +121,6 @@ begin
   end;
 
 
-
-  {
-
-  // get the shared data model
-  aModel := DataModel;
-
-  VirtualTableExternalRegisterAll(aModel,aProps,[regMapAutoKeywordFields]); //[regMapAutoKeywordFields]
-
-  aRestServer := TSQLRestServerDB.Create(aModel,SQLITE_MEMORY_DATABASE_NAME,false); //TSQLRestServerDB
-  aRestServer.CreateMissingTables;
-
-  ORMServer := TNoteServer.Create(ExeVersion.ProgramFilePath+'data','root');
-  try
-    TSQLLog.Family.EchoToConsole := LOG_VERBOSE;
-    HTTPServer := TSQLHttpServer.Create(HTTP_PORT,[ORMServer]);
-    try
-      sleep(300); // let the HTTP server start (for the console log refresh)
-      writeln(#13#10'Background server is running at http://localhost:'+HTTP_PORT+''#13#10+
-              #13#10'Press [Enter] to close the server.');
-      ConsoleWaitForEnterKey;
-      Terminate;
-    finally
-      HTTPServer.Free;
-    end;
-  finally
-    ORMServer.Free;
-  end;
-
-  }
-
-
-  {
-  // quick check parameters
-  ErrorMsg:=CheckOptions('h', 'help');
-  if ErrorMsg<>'' then begin
-    ShowException(Exception.Create(ErrorMsg));
-    Terminate;
-    Exit;
-  end;
-
-  // parse parameters
-  if HasOption('h', 'help') then begin
-    WriteHelp;
-    Terminate;
-    Exit;
-  end;
-
-  { add your program here }
-  readln;
-
-  // stop program loop
-  Terminate;
-  }
 end;
 
 constructor TMyApplication.Create(TheOwner: TComponent);

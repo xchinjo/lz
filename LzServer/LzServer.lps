@@ -2,17 +2,16 @@
 <CONFIG>
   <ProjectSession>
     <PathDelim Value="\"/>
-    <Version Value="10"/>
+    <Version Value="9"/>
     <BuildModes Active="Default"/>
     <Units Count="29">
       <Unit0>
         <Filename Value="LzServer.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="23"/>
-        <CursorPos X="5" Y="35"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="11" Y="3"/>
         <UsageCount Value="56"/>
+        <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="RESTData.pas"/>
@@ -90,9 +89,9 @@
       <Unit11>
         <Filename Value="C:\SynDBZeos.pas"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="92"/>
-        <CursorPos X="5" Y="118"/>
-        <UsageCount Value="8"/>
+        <TopLine Value="104"/>
+        <CursorPos X="51" Y="118"/>
+        <UsageCount Value="11"/>
       </Unit11>
       <Unit12>
         <Filename Value="C:\SynSQLite3.pas"/>
@@ -123,101 +122,99 @@
         <UsageCount Value="12"/>
       </Unit15>
       <Unit16>
-        <Filename Value="..\..\..\SynDBZeos.pas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="104"/>
-        <CursorPos X="51" Y="118"/>
-        <UsageCount Value="11"/>
-      </Unit16>
-      <Unit17>
         <Filename Value="..\LzSample\RestServerLinuxARMDaemon.lpr"/>
         <EditorIndex Value="-1"/>
         <WindowIndex Value="-1"/>
         <TopLine Value="16"/>
         <CursorPos X="42" Y="8"/>
         <UsageCount Value="10"/>
-      </Unit17>
-      <Unit18>
+      </Unit16>
+      <Unit17>
         <Filename Value="..\..\mORMot\SQLite3\mORMot.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="1193"/>
         <CursorPos X="36" Y="1210"/>
         <UsageCount Value="10"/>
-      </Unit18>
-      <Unit19>
+      </Unit17>
+      <Unit18>
         <Filename Value="..\..\mORMot\SQLite3\mORMotDB.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="132"/>
         <CursorPos X="8" Y="145"/>
         <UsageCount Value="10"/>
-      </Unit19>
-      <Unit20>
+      </Unit18>
+      <Unit19>
         <Filename Value="..\..\mORMot\SQLite3\mORMotSQLite3.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="241"/>
         <CursorPos X="8" Y="254"/>
         <UsageCount Value="10"/>
-      </Unit20>
-      <Unit21>
+      </Unit19>
+      <Unit20>
         <Filename Value="..\..\mORMot\SQLite3\mORMotHttpServer.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="175"/>
         <CursorPos X="8" Y="188"/>
         <UsageCount Value="10"/>
-      </Unit21>
-      <Unit22>
+      </Unit20>
+      <Unit21>
         <Filename Value="..\..\mORMot\SynDBZeos.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="108"/>
         <CursorPos X="5" Y="121"/>
         <UsageCount Value="10"/>
-      </Unit22>
-      <Unit23>
+      </Unit21>
+      <Unit22>
         <Filename Value="..\..\Downloads\ZEOSDBO-7.1.4-stable\src\dbc\ZDbcInterbase6Utils.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="758"/>
         <CursorPos X="29" Y="847"/>
         <UsageCount Value="10"/>
-      </Unit23>
-      <Unit24>
+      </Unit22>
+      <Unit23>
         <Filename Value="..\mORMot\SQLite3\mORMot.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="1193"/>
         <CursorPos X="8" Y="1206"/>
         <UsageCount Value="10"/>
-      </Unit24>
-      <Unit25>
+      </Unit23>
+      <Unit24>
         <Filename Value="..\mORMot\SQLite3\mORMotDB.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="132"/>
         <CursorPos X="8" Y="145"/>
         <UsageCount Value="10"/>
-      </Unit25>
-      <Unit26>
+      </Unit24>
+      <Unit25>
         <Filename Value="..\mORMot\SQLite3\mORMotSQLite3.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="241"/>
         <CursorPos X="8" Y="254"/>
         <UsageCount Value="10"/>
-      </Unit26>
-      <Unit27>
+      </Unit25>
+      <Unit26>
         <Filename Value="..\mORMot\SQLite3\mORMotHttpServer.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="175"/>
         <CursorPos X="8" Y="188"/>
         <UsageCount Value="10"/>
-      </Unit27>
-      <Unit28>
+      </Unit26>
+      <Unit27>
         <Filename Value="..\mORMot\SynDBZeos.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="105"/>
         <CursorPos X="32" Y="116"/>
         <UsageCount Value="10"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="..\ZEOSDBO-7.1.4-stable\src\dbc\ZDbcInterbase6Utils.pas"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="814"/>
+        <CursorPos X="45" Y="828"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit28>
     </Units>
-    <General>
-      <ActiveWindowIndexAtStart Value="-1"/>
-    </General>
     <JumpHistory HistoryIndex="-1"/>
   </ProjectSession>
   <Debugging>

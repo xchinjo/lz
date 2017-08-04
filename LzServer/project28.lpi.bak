@@ -57,12 +57,9 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="..\..;..\..\.."/>
+      <OtherUnitFiles Value="..\mORMotLz;..\mORMotLz\SQLite3;..\ZEOSDBO-7.1.4-stable\src\core;..\ZEOSDBO-7.1.4-stable\src\component;..\ZEOSDBO-7.1.4-stable\src\dbc;..\ZEOSDBO-7.1.4-stable\src\parsesql;..\ZEOSDBO-7.1.4-stable\src\plain"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
-    <CodeGeneration>
-      <TargetCPU Value="i386"/>
-    </CodeGeneration>
   </CompilerOptions>
   <Debugging>
     <Exceptions Count="5">
