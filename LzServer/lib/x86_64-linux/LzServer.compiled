@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1486325403"/>
+  <Params Value=" -MObjFPC -Scghi -Cg -O1 -g -gl -l -vewnhibq -Fi/home/delphi/lz/LzServer/lib/x86_64-linux -Fu/home/delphi/lz/mORMotLz -Fu/home/delphi/lz/mORMotLz/SQLite3 -Fu/home/delphi/lz/ZEOSDBO-7.1.4-stable/src/core -Fu/home/delphi/lz/ZEOSDBO-7.1.4-stable/src/component -Fu/home/delphi/lz/ZEOSDBO-7.1.4-stable/src/dbc -Fu/home/delphi/lz/ZEOSDBO-7.1.4-stable/src/parsesql -Fu/home/delphi/lz/ZEOSDBO-7.1.4-stable/src/plain -Fu/home/delphi/lz/LzServer/ -FU/home/delphi/lz/LzServer/lib/x86_64-linux/ LzServer.lpr"/>
+</CONFIG>

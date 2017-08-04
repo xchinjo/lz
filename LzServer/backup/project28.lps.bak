@@ -4,12 +4,13 @@
     <PathDelim Value="\"/>
     <Version Value="10"/>
     <BuildModes Active="Default"/>
-    <Units Count="28">
+    <Units Count="29">
       <Unit0>
         <Filename Value="project28.lpr"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="68"/>
-        <CursorPos X="63" Y="84"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="78"/>
+        <CursorPos X="60" Y="107"/>
         <UsageCount Value="56"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -204,15 +205,22 @@
       </Unit26>
       <Unit27>
         <Filename Value="..\mORMot\SQLite3\mORMotHttpServer.pas"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="4"/>
         <TopLine Value="175"/>
         <CursorPos X="8" Y="188"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit27>
+      <Unit28>
+        <Filename Value="..\mORMot\SynDBZeos.pas"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="105"/>
+        <CursorPos X="32" Y="116"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit28>
     </Units>
-    <JumpHistory Count="7" HistoryIndex="6">
+    <JumpHistory Count="9" HistoryIndex="8">
       <Position1>
         <Filename Value="project28.lpr"/>
         <Caret Line="23" Column="44"/>
@@ -237,6 +245,13 @@
       <Position7>
         <Filename Value="..\mORMot\SQLite3\mORMotHttpServer.pas"/>
       </Position7>
+      <Position8>
+        <Filename Value="..\mORMot\SynDBZeos.pas"/>
+      </Position8>
+      <Position9>
+        <Filename Value="project28.lpr"/>
+        <Caret Line="84" Column="63" TopLine="68"/>
+      </Position9>
     </JumpHistory>
   </ProjectSession>
   <Debugging>

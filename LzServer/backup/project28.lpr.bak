@@ -47,51 +47,16 @@ procedure TMyApplication.DoRun;
 //  ErrorMsg: String;
 begin
 
-  {
-  // set logging abilities
-  SQLite3Log.Family.Level := LOG_VERBOSE;
-  //SQLite3Log.Family.EchoToConsole := LOG_VERBOSE;
-  SQLite3Log.Family.PerThreadLog := ptIdentifiedInOnFile;
-  }
-
-
-
-  //aProps := TODBCConnectionProperties.Create('','Driver=PostgreSQL Unicode'+
-  //    {$ifdef CPU64}'(x64)'+{$endif}';Database=postgres;'+
-  //    'Server=localhost;Port=5433;UID=postgres;Pwd=postgresPassword','','');
-
-  {
-  aProps := TODBCConnectionProperties.Create('','Driver=MySQL'+
-        ';Database=SAM;'+
-        'Server=124.109.2.164;Port=3307;USER=insysc;Password=insysc1234567890*','','');
-        }
-
-
    {$IFDEF UNIX}
    // for linux
-   //aProps := TODBCConnectionProperties.Create('','Driver=MySQL'+
-   //aProps := TODBCConnectionProperties.Create('','MySQL'+
-   //      ';Database=SAM;'+
-   //      'Server=rootcode.info;Port=3306;USER=joni;Password=P@ssw0rd123','','');
-
-      // aProps := TODBCConnectionProperties.Create('','Driver=Firebird'+
-     //aProps := TODBCConnectionProperties.Create('','MySQL'+
-      //     ';DSN=Firebird;DIRBER=Firebird;UID=SYSDBA;PWD=masterkey;FILEDSN=Firebird'+
-      //     '','','');
-
-
- aProps := TSQLDBZEOSConnectionProperties.Create('zdbc:firebird-2.5://127.0.0.1:3050//fbdb/ErpDB.FDB?LibLocation=/usr/lib64/libfbclient.so;username=sysdba;password=masterkey','/fbdb/ErpDB.FDB','SYSDBA','masterkey');
-
-
-
+    aProps := TSQLDBZEOSConnectionProperties.Create('zdbc:firebird-2.5://127.0.0.1:3050//fbdb/sam.fdb?LibLocation=/usr/lib64/libfbclient.so;username=sysdba;password=masterkey','/fbdb/ErpDB.FDB','SYSDBA','masterkey');
    {$ELSE}
     // for win
-
-//   aProps := TODBCConnectionProperties.Create('','Driver=MySQL ODBC 3.51 Driver'+
+    //   aProps := TODBCConnectionProperties.Create('','Driver=MySQL ODBC 3.51 Driver'+
    aProps := TODBCConnectionProperties.Create('','Driver=MySQL ODBC 5.3 Unicode Driver'+
    //aProps := TODBCConnectionProperties.Create('','MySQL'+
          ';Database=SAM;'+
-         'Server=124.109.2.164;Port=3307;USER=insysc;Password=insysc1234567890*','','');
+         'Server=124.109.2.164;Port=3307;USER=abcsoft;Password=123456','','');
    {$ENDIF}
 
     {
