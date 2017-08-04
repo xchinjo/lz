@@ -1,0 +1,105 @@
+C:\LIB\DELPHI_LIB\mORMot_LastestLz\SQLite3\Samples\28 - Simple RESTful ORM Server\project28.exe 0.0.0.0 (2016-08-10 18:24:44)Host=DESKTOP-LRSF58E User=xchinjo CPU=4*9-6-10759:FFFBEBBFFFE3BA1F0000000000 OS=15.0=6.2.9200 Wow64=0 Freq=2628192Environment variables=ALLUSERSPROFILE=C:\ProgramData	APPDATA=C:\Users\xchinjo\AppData\Roaming	asl.log=Destination=file	COLUMNS=80	CommonProgramFiles=C:\Program Files\Common Files	CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files	CommonProgramW6432=C:\Program Files\Common Files	COMPUTERNAME=DESKTOP-LRSF58E	ComSpec=C:\Windows\system32\cmd.exe	ESET_OPTIONS=                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               	HOMEDRIVE=C:	HOMEPATH=\Users\xchinjo	JAVA_HOME=C:\Program Files\Java\jdk1.8.0_66	LINES=24	LOCALAPPDATA=C:\Users\xchinjo\AppData\Local	LOGONSERVER=\\DESKTOP-LRSF58E	NUMBER_OF_PROCESSORS=4	OS=Windows_NT	Path=C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Embarcadero\Studio\17.0\bin;C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl;C:\Program Files (x86)\Embarcadero\Studio\17.0\bin64;C:\Users\Public\Documents\Embarcadero\Studio\17.0\Bpl\Win64;C:\Program Files (x86)\Embarcadero\Studio\15.0\bin;C:\Users\Public\Documents\Embarcadero\Studio\15.0\Bpl;C:\Program Files (x86)\Embarcadero\Studio\15.0\bin64;C:\Users\Public\Documents\Embarcadero\Studio\15.0\Bpl\Win64;C:\Program Files (x86)\Embarcadero\RAD Studio\12.0\bin;C:\Users\Public\Documents\RAD Studio\12.0\Bpl;C:\Program Files (x86)\Embarcadero\RAD Studio\12.0\bin64;C:\Users\Public\Documents\RAD Studio\12.0\Bpl\Win64;C:\Program Files (x86)\Embarcadero\RAD Studio\9.0\bin;C:\Users\Public\Documents\RAD Studio\9.0\Bpl;C:\Program Files (x86)\Embarcadero\RAD Studio\9.0\bin64;C:\Users\Public\Documents\RAD Studio\9.0\Bpl\Win64;C:\Program Files (x86)\Borland\Delphi7\Bin;C:\Program Files (x86)\Borland\Delphi7\Projects\Bpl\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\OpenVPN\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\nodejs\;C:\Program Files\MongoDB\Server\3.2\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Common Files\Tom Sawyer Software\8.0.0;C:\LIB\JAVA_LIB\apache-maven-3.3.9\bin;C:\Users\xchinjo\AppData\Local\atom\bin;C:\Users\xchinjo\AppData\Roaming\npm	PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC	PROCESSOR_ARCHITECTURE=AMD64	PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel	PROCESSOR_LEVEL=6	PROCESSOR_REVISION=2a07	ProgramData=C:\ProgramData	ProgramFiles=C:\Program Files	ProgramFiles(x86)=C:\Program Files (x86)	ProgramW6432=C:\Program Files	PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\PowerShell\Modules\	PUBLIC=C:\Users\Public	SESSIONNAME=Console	SystemDrive=C:	SystemRoot=C:\Windows	TEMP=C:\Users\xchinjo\AppData\Local\Temp	TMP=C:\Users\xchinjo\AppData\Local\Temp	TVT=C:\Program Files (x86)\Lenovo	USERDOMAIN=DESKTOP-LRSF58E	USERDOMAIN_ROAMINGPROFILE=DESKTOP-LRSF58E	USERNAME=xchinjo	USERPROFILE=C:\Users\xchinjo	VBOX_MSI_INSTALL_PATH=C:\Program Files\Oracle\VirtualBox\	windir=C:\WindowsTSQLLog 1.18.2833 FTS3 2016-08-10T11:24:5120160810 11245123  !  +    mORMotHttpServer.TSQLHttpServer(0156BD40).Create useHttpApiRegisteringURI (secNone) on port 888
+20160810 11245123  !  -    00.001.177
+20160810 11245123  ! http  mORMotHttpServer.TSQLHttpServer(0156BD40) http.sys registration of http://+:888/root
+20160810 11245123  " info  SetThreadName 00000C20=TSQLHttpServer 888/root THttpApiServer
+20160810 11245123  " trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000C20 ThreadCount=1
+20160810 11245125  # info  SetThreadName 000020BC=TSQLHttpServer 888/root THttpApiServer
+20160810 11245125  # trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=000020BC ThreadCount=2
+20160810 11245125  $ info  SetThreadName 00001778=TSQLHttpServer 888/root THttpApiServer
+20160810 11245125  $ trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001778 ThreadCount=3
+20160810 11245126  ! http  mORMotHttpServer.TSQLHttpServer(0156BD40) {"THttpApiServer(0154AD20)":{"Cloned":false,"RegisteredUrl":"http://+:888/root/","HTTPQueueLength":1000,"MaxBandwidth":-1,"MaxConnections":-1,"APIVersion":"HTTP API 2.0","ServerName":"Synopse mORMot (Windows)","ProcessName":"root "}} initialized for root
+20160810 11245126  % info  SetThreadName 00000604=TSQLHttpServer 888/root THttpApiServer
+20160810 11245126  % trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000604 ThreadCount=4
+20160810 11245126  & info  SetThreadName 000005C4=TSQLHttpServer 888/root THttpApiServer
+20160810 11245126  & trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=000005C4 ThreadCount=5
+20160810 11245126  ' info  SetThreadName 00002228=TSQLHttpServer 888/root THttpApiServer
+20160810 11245126  ' trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002228 ThreadCount=6
+20160810 11245126  ( info  SetThreadName 00001C98=TSQLHttpServer 888/root THttpApiServer
+20160810 11245126  ) info  SetThreadName 00002070=TSQLHttpServer 888/root THttpApiServer
+20160810 11245126  ) trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002070 ThreadCount=8
+20160810 11245126  * info  SetThreadName 0000007C=TSQLHttpServer 888/root THttpApiServer
+20160810 11245126  * trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000007C ThreadCount=9
+20160810 11245126  ( trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001C98 ThreadCount=7
+20160810 11245126  + info  SetThreadName 00000B88=TSQLHttpServer 888/root THttpApiServer
+20160810 11245126  + trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000B88 ThreadCount=10
+20160810 11245127  , info  SetThreadName 00000C68=TSQLHttpServer 888/root THttpApiServer
+20160810 11245127  , trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000C68 ThreadCount=11
+20160810 11245127  - info  SetThreadName 00001B10=TSQLHttpServer 888/root THttpApiServer
+20160810 11245127  - trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001B10 ThreadCount=12
+20160810 11245127  . info  SetThreadName 000005EC=TSQLHttpServer 888/root THttpApiServer
+20160810 11245127  . trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=000005EC ThreadCount=13
+20160810 11245127  / info  SetThreadName 00002128=TSQLHttpServer 888/root THttpApiServer
+20160810 11245127  / trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00002128 ThreadCount=14
+20160810 11245127  0 info  SetThreadName 0000018C=TSQLHttpServer 888/root THttpApiServer
+20160810 11245127  0 trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=0000018C ThreadCount=15
+20160810 11245127  1 info  SetThreadName 00000408=TSQLHttpServer 888/root THttpApiServer
+20160810 11245128  2 info  SetThreadName 00000178=TSQLHttpServer 888/root THttpApiServer
+20160810 11245128  3 info  SetThreadName 00001A38=TSQLHttpServer 888/root THttpApiServer
+20160810 11245128  3 trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001A38 ThreadCount=18
+20160810 11245128  4 info  SetThreadName 000014B4=TSQLHttpServer 888/root THttpApiServer
+20160810 11245128  5 info  SetThreadName 000006C8=TSQLHttpServer 888/root THttpApiServer
+20160810 11245128  5 trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=000006C8 ThreadCount=20
+20160810 11245128  6 info  SetThreadName 00000D14=TSQLHttpServer 888/root THttpApiServer
+20160810 11245128  6 trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000D14 ThreadCount=21
+20160810 11245128  7 info  SetThreadName 00001500=TSQLHttpServer 888/root THttpApiServer
+20160810 11245128  7 trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001500 ThreadCount=22
+20160810 11245128  8 info  SetThreadName 00001CA0=TSQLHttpServer 888/root THttpApiServer
+20160810 11245128  8 trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001CA0 ThreadCount=23
+20160810 11245128  9 info  SetThreadName 000007F4=TSQLHttpServer 888/root THttpApiServer
+20160810 11245129  9 trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=000007F4 ThreadCount=24
+20160810 11245129  : info  SetThreadName 00000458=TSQLHttpServer 888/root THttpApiServer
+20160810 11245129  : trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000458 ThreadCount=25
+20160810 11245129  ; info  SetThreadName 00001DA4=TSQLHttpServer 888/root THttpApiServer
+20160810 11245129  ; trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001DA4 ThreadCount=26
+20160810 11245129  < info  SetThreadName 00001008=TSQLHttpServer 888/root THttpApiServer
+20160810 11245129  < trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001008 ThreadCount=27
+20160810 11245129  = info  SetThreadName 00001C9C=TSQLHttpServer 888/root THttpApiServer
+20160810 11245129  = trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001C9C ThreadCount=28
+20160810 11245129  > info  SetThreadName 00000E50=TSQLHttpServer 888/root THttpApiServer
+20160810 11245129  > trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000E50 ThreadCount=29
+20160810 11245129  1 trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000408 ThreadCount=16
+20160810 11245130  2 trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000178 ThreadCount=17
+20160810 11245130  ? info  SetThreadName 00000A30=TSQLHttpServer 888/root THttpApiServer
+20160810 11245130  ? trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00000A30 ThreadCount=30
+20160810 11245130  @ info  SetThreadName 00001F04=TSQLHttpServer 888/root THttpApiServer
+20160810 11245130  @ trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001F04 ThreadCount=31
+20160810 11245130  4 trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=000014B4 ThreadCount=19
+20160810 11245130  A info  SetThreadName 00001F14=TSQLHttpServer 888/root THttpApiServer
+20160810 11245130  A trace RESTServerClass.TNoteServer(014F4A30) BeginCurrentThread(THttpApiServer) root=root ThreadID=00001F14 ThreadCount=32
+20160810 11245547  !  +    mORMotHttpServer.TSQLHttpServer(0156BD40).00000001000E6E45 
+20160810 11245547  !  -    00.000.674
+20160810 11245547  ! http  mORMotHttpServer.TSQLHttpServer(0156BD40) {"THttpApiServer(0154AD20)":{"Cloned":false,"RegisteredUrl":"http://+:888/root/","HTTPQueueLength":1000,"MaxBandwidth":-1,"MaxConnections":-1,"APIVersion":"HTTP API 2.0","ServerName":"Synopse mORMot (Windows)","ProcessName":"root "}} finalized for 1 server(s)
+20160810 11245547  % trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00000604 ThreadCount=29
+20160810 11245547  $ trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00001778 ThreadCount=30
+20160810 11245547  & trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=000005C4 ThreadCount=28
+20160810 11245547  ) trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00002070 ThreadCount=26
+20160810 11245547  + trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00000B88 ThreadCount=24
+20160810 11245547  - trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00001B10 ThreadCount=22
+20160810 11245547  . trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=000005EC ThreadCount=21
+20160810 11245547  # trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=000020BC ThreadCount=19
+20160810 11245547  5 trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=000006C8 ThreadCount=17
+20160810 11245547  / trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00002128 ThreadCount=20
+20160810 11245547  * trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=0000007C ThreadCount=25
+20160810 11245547  " trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00000C20 ThreadCount=31
+20160810 11245548  A trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00001F14 ThreadCount=0
+20160810 11245548  2 trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00000178 ThreadCount=4
+20160810 11245548  ? trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00000A30 ThreadCount=3
+20160810 11245548  > trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00000E50 ThreadCount=6
+20160810 11245548  1 trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00000408 ThreadCount=5
+20160810 11245548  : trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00000458 ThreadCount=11
+20160810 11245548  0 trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=0000018C ThreadCount=7
+20160810 11245548  9 trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=000007F4 ThreadCount=12
+20160810 11245548  ; trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00001DA4 ThreadCount=10
+20160810 11245548  8 trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00001CA0 ThreadCount=14
+20160810 11245548  ( trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00001C98 ThreadCount=13
+20160810 11245548  7 trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00001500 ThreadCount=15
+20160810 11245548  , trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00000C68 ThreadCount=23
+20160810 11245548  @ trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00001F04 ThreadCount=2
+20160810 11245549  = trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00001C9C ThreadCount=8
+20160810 11245549  < trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00001008 ThreadCount=9
+20160810 11245549  6 trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00000D14 ThreadCount=16
+20160810 11245549  ' trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00002228 ThreadCount=27
+20160810 11245549  3 trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=00001A38 ThreadCount=18
+20160810 11245549  4 trace RESTServerClass.TNoteServer(014F4A30) EndCurrentThread(THttpApiServer) ThreadID=000014B4 ThreadCount=1
+20160810 11245549  !  +    RESTServerClass.TNoteServer(014F4A30).Shutdown CurrentRequestCount=0 File=
+20160810 11245550  !  -    00.005.340
